@@ -50,7 +50,7 @@ Sample article showcasing basic Markdown syntax and formatting for HTML elements
 </div>
 <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4L18.5 9.5a1.5 1.5.0 00-4-4L4 16v4"/><line x1="13.5" y1="6.5" x2="17.5" y2="10.5"/></svg>
 <time class=article-words>
-539字
+564 字
 </time>
 </div>
 <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
@@ -147,17 +147,33 @@ Sample article showcasing basic Markdown syntax and formatting for HTML elements
 </table></div>
 <h2 id=code-blocks>Code Blocks</h2>
 <h4 id=code-block-with-backticks>Code block with backticks</h4>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=color:#75715e>&lt;!doctype html&gt;</span>
-&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;en&#34;</span>&gt;
-&lt;<span style=color:#f92672>head</span>&gt;
-  &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;utf-8&#34;</span>&gt;
-  &lt;<span style=color:#f92672>title</span>&gt;Example HTML5 Document&lt;/<span style=color:#f92672>title</span>&gt;
-&lt;/<span style=color:#f92672>head</span>&gt;
-&lt;<span style=color:#f92672>body</span>&gt;
-  &lt;<span style=color:#f92672>p</span>&gt;Test&lt;/<span style=color:#f92672>p</span>&gt;
-&lt;/<span style=color:#f92672>body</span>&gt;
-&lt;/<span style=color:#f92672>html</span>&gt;
-</code></pre></div><h4 id=code-block-indented-with-four-spaces>Code block indented with four spaces</h4>
+<div class=highlight><div style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868">10
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=color:#cd2828;font-weight:700>&lt;!doctype html&gt;</span>
+&lt;<span style=color:#6ab825;font-weight:700>html</span> <span style=color:#bbb>lang</span>=<span style=color:#ed9d13>&#34;en&#34;</span>&gt;
+&lt;<span style=color:#6ab825;font-weight:700>head</span>&gt;
+  &lt;<span style=color:#6ab825;font-weight:700>meta</span> <span style=color:#bbb>charset</span>=<span style=color:#ed9d13>&#34;utf-8&#34;</span>&gt;
+  &lt;<span style=color:#6ab825;font-weight:700>title</span>&gt;Example HTML5 Document&lt;/<span style=color:#6ab825;font-weight:700>title</span>&gt;
+&lt;/<span style=color:#6ab825;font-weight:700>head</span>&gt;
+&lt;<span style=color:#6ab825;font-weight:700>body</span>&gt;
+  &lt;<span style=color:#6ab825;font-weight:700>p</span>&gt;Test&lt;/<span style=color:#6ab825;font-weight:700>p</span>&gt;
+&lt;/<span style=color:#6ab825;font-weight:700>body</span>&gt;
+&lt;/<span style=color:#6ab825;font-weight:700>html</span>&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h4 id=code-block-indented-with-four-spaces>Code block indented with four spaces</h4>
 <pre><code>&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -170,23 +186,50 @@ Sample article showcasing basic Markdown syntax and formatting for HTML elements
 &lt;/html&gt;
 </code></pre>
 <h4 id=code-block-with-hugos-internal-highlight-shortcode>Code block with Hugo&rsquo;s internal highlight shortcode</h4>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=color:#75715e>&lt;!doctype html&gt;</span>
-&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;en&#34;</span>&gt;
-&lt;<span style=color:#f92672>head</span>&gt;
-  &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;utf-8&#34;</span>&gt;
-  &lt;<span style=color:#f92672>title</span>&gt;Example HTML5 Document&lt;/<span style=color:#f92672>title</span>&gt;
-&lt;/<span style=color:#f92672>head</span>&gt;
-&lt;<span style=color:#f92672>body</span>&gt;
-  &lt;<span style=color:#f92672>p</span>&gt;Test&lt;/<span style=color:#f92672>p</span>&gt;
-&lt;/<span style=color:#f92672>body</span>&gt;
-&lt;/<span style=color:#f92672>html</span>&gt;</code></pre></div>
+<div class=highlight><div style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868">10
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=color:#cd2828;font-weight:700>&lt;!doctype html&gt;</span>
+&lt;<span style=color:#6ab825;font-weight:700>html</span> <span style=color:#bbb>lang</span>=<span style=color:#ed9d13>&#34;en&#34;</span>&gt;
+&lt;<span style=color:#6ab825;font-weight:700>head</span>&gt;
+  &lt;<span style=color:#6ab825;font-weight:700>meta</span> <span style=color:#bbb>charset</span>=<span style=color:#ed9d13>&#34;utf-8&#34;</span>&gt;
+  &lt;<span style=color:#6ab825;font-weight:700>title</span>&gt;Example HTML5 Document&lt;/<span style=color:#6ab825;font-weight:700>title</span>&gt;
+&lt;/<span style=color:#6ab825;font-weight:700>head</span>&gt;
+&lt;<span style=color:#6ab825;font-weight:700>body</span>&gt;
+  &lt;<span style=color:#6ab825;font-weight:700>p</span>&gt;Test&lt;/<span style=color:#6ab825;font-weight:700>p</span>&gt;
+&lt;/<span style=color:#6ab825;font-weight:700>body</span>&gt;
+&lt;/<span style=color:#6ab825;font-weight:700>html</span>&gt;</code></pre></td></tr></table>
+</div>
+</div>
 <h4 id=diff-code-block>Diff code block</h4>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-diff data-lang=diff>[dependencies.bevy]
+<div class=highlight><div style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#686868">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#686868">5
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-diff data-lang=diff>[dependencies.bevy]
 git = &#34;https://github.com/bevyengine/bevy&#34;
 rev = &#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&#34;
-<span style=color:#f92672>- features = [&#34;dynamic&#34;]
-</span><span style=color:#f92672></span><span style=color:#a6e22e>+ features = [&#34;jpeg&#34;, &#34;dynamic&#34;]
-</span></code></pre></div><h2 id=list-types>List Types</h2>
+<span style=color:#d22323>- features = [&#34;dynamic&#34;]
+</span><span style=color:#d22323></span><span style=color:#589819>+ features = [&#34;jpeg&#34;, &#34;dynamic&#34;]
+</span></code></pre></td></tr></table>
+</div>
+</div><h2 id=list-types>List Types</h2>
 <h4 id=ordered-list>Ordered List</h4>
 <ol>
 <li>First item</li>

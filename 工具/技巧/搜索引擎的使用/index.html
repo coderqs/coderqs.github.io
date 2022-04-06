@@ -1,7 +1,38 @@
-<!doctype html><html lang=zh dir=ltr><head><meta name=generator content="Hugo 0.96.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="清松的笔记本"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://coderqs.github.io/"><title>清松的笔记本 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="======= 常用的指令 =======
+1. &#34; (双引号) #  把搜索词放在双引号（英文半角）中，代表完全匹配搜索，也就是说搜索结果返回的页面包含双引号中出现的所有的词，连顺序也必须完全匹配。Google和百度都支持这个指令。 例如：
+ &ldquo;seo方法图片&rdquo;
+ 2. - (减号) #  代表搜索不包含减号后面的词的页面。使用这个指令时减号前面必须是空格，减号后面没有空格，紧跟着需要排除的词。Google和百度都支持这个指令。 例如：
+ 搜索 -引擎
+ 返回的结果中包含搜索但不包含引擎
+3. * (星号) #  是常用的通配符，也可以用在搜索中。百度不支持 * 号搜索指令。 例如：
+ 搜索*擎
+ 其中的*号代表任何文字。返回的结果就不仅包含“搜索引擎”，还包含了“搜索收擎”，“搜索巨擎”等内容。
+4. ~(波浪线) #  代表搜索包含这个词以及合适的近义词的页面。貌似百度不支持该搜索指令 例如：
+ ~elderly
+ 所得到的页面就会不仅是包括“elderly”这个词，还会有包括“senior”、“older”、“aged”等等词的页面。
+5. inurl #  inurl: 指令用于搜索查询词出现在url 中的页面，inurl 指令支持中文和英文。百度和Google都支持这个指令。 例如：
+ inurl:搜索引擎优化
+ 返回的结果都是网址url 中包含“搜索引擎优化”的页面。由于关键词出现在url 中对排名有一定影响，使用inurl:搜索可以更准确地找到竞争对手。
+6. inanchor #  inanchor:指令返回的结果是导入链接锚文字中包含搜索词的页面。百度不支持inanchor。 例如：
+ inanchor:点击这里"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content><meta property="og:description" content="======= 常用的指令 =======
+1. &#34; (双引号) #  把搜索词放在双引号（英文半角）中，代表完全匹配搜索，也就是说搜索结果返回的页面包含双引号中出现的所有的词，连顺序也必须完全匹配。Google和百度都支持这个指令。 例如：
+ &ldquo;seo方法图片&rdquo;
+ 2. - (减号) #  代表搜索不包含减号后面的词的页面。使用这个指令时减号前面必须是空格，减号后面没有空格，紧跟着需要排除的词。Google和百度都支持这个指令。 例如：
+ 搜索 -引擎
+ 返回的结果中包含搜索但不包含引擎
+3. * (星号) #  是常用的通配符，也可以用在搜索中。百度不支持 * 号搜索指令。 例如：
+ 搜索*擎
+ 其中的*号代表任何文字。返回的结果就不仅包含“搜索引擎”，还包含了“搜索收擎”，“搜索巨擎”等内容。
+4. ~(波浪线) #  代表搜索包含这个词以及合适的近义词的页面。貌似百度不支持该搜索指令 例如：
+ ~elderly
+ 所得到的页面就会不仅是包括“elderly”这个词，还会有包括“senior”、“older”、“aged”等等词的页面。
+5. inurl #  inurl: 指令用于搜索查询词出现在url 中的页面，inurl 指令支持中文和英文。百度和Google都支持这个指令。 例如：
+ inurl:搜索引擎优化
+ 返回的结果都是网址url 中包含“搜索引擎优化”的页面。由于关键词出现在url 中对排名有一定影响，使用inurl:搜索可以更准确地找到竞争对手。
+6. inanchor #  inanchor:指令返回的结果是导入链接锚文字中包含搜索词的页面。百度不支持inanchor。 例如：
+ inanchor:点击这里"><meta property="og:type" content="article"><meta property="og:url" content="https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/"><meta property="article:section" content="工具"><title>搜索引擎的使用 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
 <script defer src=/zh.search.min.129ddde2d7305084961f68a038faf80f8040d2fe8ad71b427fe50f41cf387ca8.js integrity="sha256-Ep3d4tcwUISWH2igOPr4D4BA0v6K1xtCf+UPQc84fKg=" crossorigin=anonymous></script>
-<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=https://coderqs.github.io/index.xml title=清松的笔记本></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>清松的笔记本</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><span>计算机语言</span><ul><li><input type=checkbox id=section-2f82c9a464154d0b6f9ef4350045ad73 class=toggle>
 <label for=section-2f82c9a464154d0b6f9ef4350045ad73 class="flex justify-between"><a role=button>程序语言</a></label><ul><li><input type=checkbox id=section-e836dff9c83488818449aee75c856312 class=toggle>
 <label for=section-e836dff9c83488818449aee75c856312 class="flex justify-between"><a role=button>C/C++</a></label><ul><li><input type=checkbox id=section-d7374e89f91838a29dae7b678f7a5cd4 class=toggle>
@@ -19,8 +50,8 @@
 <label for=section-5e6f2b4bb314c127d413b296515fdd8c class="flex justify-between"><a role=button>Windows</a></label><ul></ul></li></ul></li><li><span>网络</span><ul><li><input type=checkbox id=section-2cf97dea5033e59a7b4a4be6f95f3398 class=toggle>
 <label for=section-2cf97dea5033e59a7b4a4be6f95f3398 class="flex justify-between"><a role=button>科学上网</a></label><ul><li><input type=checkbox id=section-839965107977bc2c3d2afd1daf96a2d0 class=toggle>
 <label for=section-839965107977bc2c3d2afd1daf96a2d0 class="flex justify-between"><a role=button>V2ray</a></label><ul><li><a href=/%E7%BD%91%E7%BB%9C/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/v2ray/v2ray%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/>V2ray安装与配置</a></li></ul></li></ul></li><li><a href=/%E7%BD%91%E7%BB%9C/%E4%BD%BF%E7%94%A8cloudflare%E5%90%8E%E6%97%A0%E9%99%90%E8%B7%B3%E8%BD%AC/>使用cloudflare后无限跳转</a></li></ul></li><li><span>工具</span><ul><li><input type=checkbox id=section-3d78c992a87827d64eb295489bd2db1c class=toggle>
-<label for=section-3d78c992a87827d64eb295489bd2db1c class="flex justify-between"><a role=button>其他</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/let_s_encrypt%E5%85%8D%E8%B4%B9ssl%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E7%BB%AD%E6%9C%9F/>Let's Encrypt 免费 SSL 证书申请与续期</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/openssl%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6/>OpenSSL 自签证书</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/pandoc/>Pandoc</a></li></ul></li><li><input type=checkbox id=section-9dfdebc505554440c767a5b682c855ce class=toggle>
-<label for=section-9dfdebc505554440c767a5b682c855ce class="flex justify-between"><a role=button>技巧</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/>搜索引擎的使用</a></li></ul></li><li><input type=checkbox id=section-9a2fb410fd8d9f919ffc31fa496219d1 class=toggle>
+<label for=section-3d78c992a87827d64eb295489bd2db1c class="flex justify-between"><a role=button>其他</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/let_s_encrypt%E5%85%8D%E8%B4%B9ssl%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E7%BB%AD%E6%9C%9F/>Let's Encrypt 免费 SSL 证书申请与续期</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/openssl%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6/>OpenSSL 自签证书</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/pandoc/>Pandoc</a></li></ul></li><li><input type=checkbox id=section-9dfdebc505554440c767a5b682c855ce class=toggle checked>
+<label for=section-9dfdebc505554440c767a5b682c855ce class="flex justify-between"><a role=button>技巧</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/ class=active>搜索引擎的使用</a></li></ul></li><li><input type=checkbox id=section-9a2fb410fd8d9f919ffc31fa496219d1 class=toggle>
 <label for=section-9a2fb410fd8d9f919ffc31fa496219d1 class="flex justify-between"><a role=button>服务</a></label><ul><li><input type=checkbox id=section-3f692b2133bf1d1748a9d3dc08bf694f class=toggle>
 <label for=section-3f692b2133bf1d1748a9d3dc08bf694f class="flex justify-between"><a role=button>Dokuwiki</a></label><ul><li><input type=checkbox id=section-462d161a32bf5806953d010d9a4163ad class=toggle>
 <label for=section-462d161a32bf5806953d010d9a4163ad class="flex justify-between"><a role=button>插件与主题</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/indexmenu/>Indexmenu</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/start/>Start</a></li></ul></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E4%B8%AA%E6%80%A7%E5%8C%96%E7%9A%84%E8%AE%BE%E7%BD%AE/>个性化的设置</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/>安装与部署</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/>常见问题</a></li></ul></li><li><input type=checkbox id=section-47d8930e69ae535636dece725656ff1e class=toggle>
@@ -48,5 +79,41 @@
 <label for=section-6690855cc45b11e620ce8c67a5fb62fb class="flex justify-between"><a role=button>Vmware</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E8%99%9A%E6%8B%9F%E6%9C%BA/vmware/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>VMware 遇见的问题及解决方法</a></li></ul></li></ul></li></ul></li><li><span>设备</span><ul><li><input type=checkbox id=section-a1abdcaab6c4668c7ce52ea5a3e37013 class=toggle>
 <label for=section-a1abdcaab6c4668c7ce52ea5a3e37013 class="flex justify-between"><a role=button>树莓派</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>故障排除</a></li><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%83%A7%E5%BD%95/>系统的烧录</a></li></ul></li><li><input type=checkbox id=section-efee4cd7fc6d13515117342cc409f41e class=toggle>
 <label for=section-efee4cd7fc6d13515117342cc409f41e class="flex justify-between"><a role=button>路由器</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8_mini_%E5%88%B7_openwrt/>小米路由器 Mini 刷 Openwrt</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>清松的笔记本</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"></aside></header><article class=markdown></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content></div></aside></main></body></html>
+<strong>搜索引擎的使用</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><ul><li><ul><li></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><p>======= 常用的指令 =======</p><h5 id=1--双引号>1. " (双引号)
+<a class=anchor href=#1--%e5%8f%8c%e5%bc%95%e5%8f%b7>#</a></h5><p>把搜索词放在双引号（英文半角）中，代表完全匹配搜索，也就是说搜索结果返回的页面包含双引号中出现的所有的词，连顺序也必须完全匹配。<strong>Google和百度都支持这个指令</strong>。
+例如：</p><blockquote><p>&ldquo;seo方法图片&rdquo;</p></blockquote><h5 id=2---减号>2. - (减号)
+<a class=anchor href=#2---%e5%87%8f%e5%8f%b7>#</a></h5><p>代表搜索不包含减号后面的词的页面。<strong>使用这个指令时减号前面必须是空格，减号后面没有空格，紧跟着需要排除的词</strong>。<strong>Google和百度都支持这个指令</strong>。
+例如：</p><blockquote><p>搜索 -引擎</p></blockquote><p>返回的结果中包含搜索但不包含引擎</p><h5 id=3--星号>3. * (星号)
+<a class=anchor href=#3--%e6%98%9f%e5%8f%b7>#</a></h5><p>是常用的通配符，也可以用在搜索中。<strong>百度不支持 * 号搜索指令</strong>。 例如：</p><blockquote><p>搜索*擎</p></blockquote><p>其中的*号代表任何文字。返回的结果就不仅包含“搜索引擎”，还包含了“搜索收擎”，“搜索巨擎”等内容。</p><h5 id=4-波浪线>4. ~(波浪线)
+<a class=anchor href=#4-%e6%b3%a2%e6%b5%aa%e7%ba%bf>#</a></h5><p>代表搜索包含这个词以及合适的近义词的页面。<strong>貌似百度不支持该搜索指令</strong>
+例如：</p><blockquote><p>~elderly</p></blockquote><p>所得到的页面就会不仅是包括“elderly”这个词，还会有包括“senior”、“older”、“aged”等等词的页面。</p><h5 id=5-inurl>5. inurl
+<a class=anchor href=#5-inurl>#</a></h5><p>inurl: 指令用于搜索查询词出现在url 中的页面，inurl
+指令支持中文和英文。<strong>百度和Google都支持这个指令</strong>。 例如：</p><blockquote><p>inurl:搜索引擎优化</p></blockquote><p>返回的结果都是网址url 中包含“搜索引擎优化”的页面。由于关键词出现在url
+中对排名有一定影响，使用inurl:搜索可以更准确地找到竞争对手。</p><h5 id=6-inanchor>6. inanchor
+<a class=anchor href=#6-inanchor>#</a></h5><p>inanchor:指令返回的结果是导入链接锚文字中包含搜索词的页面。<strong>百度不支持inanchor</strong>。
+例如：</p><blockquote><p>inanchor:点击这里</p></blockquote><p>返回的结果页面本身并不一定包含“点击这里”这四个字，而是指向这些页面的链接锚文字中出现了“点击这里”这四个字。</p><h5 id=7-intitle>7. intitle
+<a class=anchor href=#7-intitle>#</a></h5><p>intitle: 指令返回的是页面title
+中包含关键词的页面。<strong>Google和百度都支持这个指令</strong>。 使用intitle
+指令找到的文件是更准确的竞争页面。如果关键词只出现在页面可见文字中，而没有出现在title
+中，大部分情况是并没有针对关键词进行优化，所以也不是有力的竞争对手。</p><h5 id=8-allintitle>8. allintitle
+<a class=anchor href=#8-allintitle>#</a></h5><p>allintitle:搜索返回的是页面标题中包含多组关键词的文件，<strong>Google和百度都支持这个指令</strong>。
+例如：</p><blockquote><p>allintitle:SEO 搜索引擎优化</p></blockquote><p>就相当于：intitle:SEO
+intitle:搜索引擎优化，返回的是标题中中既包含“SEO”，也包含“搜索引擎优化”的页面</p><h5 id=9-allinurl>9. allinurl
+<a class=anchor href=#9-allinurl>#</a></h5><p>与allintitle: 类似，<strong>Google和百度都支持这个指令</strong>。 例如：</p><blockquote><p>allinurl:SEO 搜索引擎优化</p></blockquote><p>就相当于：inurl:SEO inurl:搜索引擎优化</p><h5 id=10-filetype>10. filetype
+<a class=anchor href=#10-filetype>#</a></h5><p>用于搜索特定文件格式，<strong>Google和百度都支持这个指令</strong>。 例如：</p><blockquote><p>filetype:pdf SEO</p></blockquote><p>返回的就是包含SEO 这个关键词的所有pdf 文件。</p><h5 id=11-site>11. site
+<a class=anchor href=#11-site>#</a></h5><p>site:是SEO
+最熟悉的高级搜索指令，用来搜索某个域名下的所有文件，<strong>Google和百度都支持这个指令</strong>。</p><blockquote><p>site:
+<a href=http://cnseotool.com>http://cnseotool.com</a></p></blockquote><h5 id=12-linkdomain>12. linkdomain
+<a class=anchor href=#12-linkdomain>#</a></h5><p><strong>linkdomain:指令只适用于雅虎</strong>，返回的是某个域名的反向链接。雅虎的反向链接数据还比较准
+确，是SEO 人员研究竞争对手外部链接情况的重要工具之一。 例如：</p><blockquote><p>linkdomain:
+<a href=http://cnseotool.com>http://cnseotool.com</a> -site:
+<a href=http://cnseotool.com>http://cnseotool.com</a></p></blockquote><p>得到的就是点石网站的外部链接，因为-site:
+<a href=http://cnseotool.com>http://cnseotool.com</a>
+已经排除了点石本身的页面，也就是内部 链接，剩下的就都是外部链接了。</p><h5 id=13-related>13. related
+<a class=anchor href=#13-related>#</a></h5><p>related:指令<strong>只适用于Google</strong>，返回的结果是与某个网站有关联的页面。
+例如：</p><blockquote><p>related:
+<a href=http://cnseotool.com>http://cnseotool.com</a></p></blockquote><p>我们就可以得到Google 所认为的与点石网站有关联的其他页面。
+这种关联到底指的是什么，Google
+并没有明确说明，一般认为指的是有共同外部链接的网站。</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/coderqs/notes/tree/master/content.zh/%e5%b7%a5%e5%85%b7/%e6%8a%80%e5%b7%a7/%e6%90%9c%e7%b4%a2%e5%bc%95%e6%93%8e%e7%9a%84%e4%bd%bf%e7%94%a8.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>编辑本页</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><ul><li><ul><li></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>

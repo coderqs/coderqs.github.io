@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VSCode on 清松的笔记本</title><link>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/ide/vscode/</link><description>Recent content in VSCode on 清松的笔记本</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/ide/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/ide/vscode/%E6%8F%92%E4%BB%B6remote_ssh%E7%9A%84%E4%BD%BF%E7%94%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/ide/vscode/%E6%8F%92%E4%BB%B6remote_ssh%E7%9A%84%E4%BD%BF%E7%94%A8/</guid><description>插件 Remote-SSH 的使用 # 安装 # 在 vscode 的扩展里搜索 Remote-SSH
+点击安装，等待安装完成即可，安装完成后会在左侧的侧边栏多出一个图标。
+配置 # 按顺序点击图中 1、2 的图标; 在图中 3 的位置输出要远程连接的机器的用户名和地址，例如：ssh root@192.168.13.97; 输入完成后回车，点击 C:\User\xxx\.ssh\config 就可以看到连接已添加进来了，如果没有点击图中 4 的位置刷新;
+在已添加的连接上右键，选择 Connect to Host in New Windows;
+选择目标机器的系统类型（当无法识别目标机器的系统时会弹出该选项）;
+选择 Connect; 输入密码;
+输完密码后右下角有提示在下载安装 VS Code Server，等待其完成即可;
+左下角这里类似这样的显示就是连接完成了;
+参考资料 # 使用 SSH 进行远程开发
+玩转VSCode插件之Remote-SSH
+VSCode:Remote-SSH配置实录</description></item><item><title/><link>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/ide/vscode/%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/ide/vscode/%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</guid><description>设置用户代码片段 # 设置方式 # 以 Markdown 为例
+文件 &amp;gt; 首选项 &amp;gt; 用户代码片段 输入 markdown，编辑 markdown.json:
+{ // Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are: // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.</description></item></channel></rss>

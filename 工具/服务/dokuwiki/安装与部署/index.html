@@ -1,7 +1,18 @@
-<!doctype html><html lang=zh dir=ltr><head><meta name=generator content="Hugo 0.96.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="清松的笔记本"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://coderqs.github.io/"><title>清松的笔记本 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="系统要求 #  1. 支持 PHP 的 Web 服务器
+2. PHP 至少是 5.6 版本以上的，最好是最新的版本
+详细要求可参阅 官网的相关说明
+下载 #  在 官网下载最新稳定版的压缩包
+Web 服务的配置 #  在 官网中的 Webserver Specifics有提供了几款常见的 web 服务器的配置，在这里只展示了我用的 nginx 的配置
+nginx #  添加配置文件 /etc/nginx/conf.d/dokuwiki.conf
+server {  listen 443 ssl;  server_name wiki.mydomain.com;  root /var/www/html/dokuwiki;  index index.html index.php doku.php;   access_log /var/log/nginx/dokuwiki.access.log;  error_log /var/log/nginx/dokuwiki.error.log;   ssl on;  ssl_certificate /etc/letsencrypt/live/wiki.mydomain.com/fullchain.pem;  ssl_certificate_key /etc/letsencrypt/live/wiki."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content><meta property="og:description" content="系统要求 #  1. 支持 PHP 的 Web 服务器
+2. PHP 至少是 5.6 版本以上的，最好是最新的版本
+详细要求可参阅 官网的相关说明
+下载 #  在 官网下载最新稳定版的压缩包
+Web 服务的配置 #  在 官网中的 Webserver Specifics有提供了几款常见的 web 服务器的配置，在这里只展示了我用的 nginx 的配置
+nginx #  添加配置文件 /etc/nginx/conf.d/dokuwiki.conf
+server {  listen 443 ssl;  server_name wiki.mydomain.com;  root /var/www/html/dokuwiki;  index index.html index.php doku.php;   access_log /var/log/nginx/dokuwiki.access.log;  error_log /var/log/nginx/dokuwiki.error.log;   ssl on;  ssl_certificate /etc/letsencrypt/live/wiki.mydomain.com/fullchain.pem;  ssl_certificate_key /etc/letsencrypt/live/wiki."><meta property="og:type" content="article"><meta property="og:url" content="https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/"><meta property="article:section" content="工具"><title>安装与部署 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
 <script defer src=/zh.search.min.129ddde2d7305084961f68a038faf80f8040d2fe8ad71b427fe50f41cf387ca8.js integrity="sha256-Ep3d4tcwUISWH2igOPr4D4BA0v6K1xtCf+UPQc84fKg=" crossorigin=anonymous></script>
-<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=https://coderqs.github.io/index.xml title=清松的笔记本></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>清松的笔记本</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><span>计算机语言</span><ul><li><input type=checkbox id=section-2f82c9a464154d0b6f9ef4350045ad73 class=toggle>
 <label for=section-2f82c9a464154d0b6f9ef4350045ad73 class="flex justify-between"><a role=button>程序语言</a></label><ul><li><input type=checkbox id=section-e836dff9c83488818449aee75c856312 class=toggle>
 <label for=section-e836dff9c83488818449aee75c856312 class="flex justify-between"><a role=button>C/C++</a></label><ul><li><input type=checkbox id=section-d7374e89f91838a29dae7b678f7a5cd4 class=toggle>
@@ -20,10 +31,10 @@
 <label for=section-2cf97dea5033e59a7b4a4be6f95f3398 class="flex justify-between"><a role=button>科学上网</a></label><ul><li><input type=checkbox id=section-839965107977bc2c3d2afd1daf96a2d0 class=toggle>
 <label for=section-839965107977bc2c3d2afd1daf96a2d0 class="flex justify-between"><a role=button>V2ray</a></label><ul><li><a href=/%E7%BD%91%E7%BB%9C/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/v2ray/v2ray%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/>V2ray安装与配置</a></li></ul></li></ul></li><li><a href=/%E7%BD%91%E7%BB%9C/%E4%BD%BF%E7%94%A8cloudflare%E5%90%8E%E6%97%A0%E9%99%90%E8%B7%B3%E8%BD%AC/>使用cloudflare后无限跳转</a></li></ul></li><li><span>工具</span><ul><li><input type=checkbox id=section-3d78c992a87827d64eb295489bd2db1c class=toggle>
 <label for=section-3d78c992a87827d64eb295489bd2db1c class="flex justify-between"><a role=button>其他</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/let_s_encrypt%E5%85%8D%E8%B4%B9ssl%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E7%BB%AD%E6%9C%9F/>Let's Encrypt 免费 SSL 证书申请与续期</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/openssl%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6/>OpenSSL 自签证书</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/pandoc/>Pandoc</a></li></ul></li><li><input type=checkbox id=section-9dfdebc505554440c767a5b682c855ce class=toggle>
-<label for=section-9dfdebc505554440c767a5b682c855ce class="flex justify-between"><a role=button>技巧</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/>搜索引擎的使用</a></li></ul></li><li><input type=checkbox id=section-9a2fb410fd8d9f919ffc31fa496219d1 class=toggle>
-<label for=section-9a2fb410fd8d9f919ffc31fa496219d1 class="flex justify-between"><a role=button>服务</a></label><ul><li><input type=checkbox id=section-3f692b2133bf1d1748a9d3dc08bf694f class=toggle>
+<label for=section-9dfdebc505554440c767a5b682c855ce class="flex justify-between"><a role=button>技巧</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/>搜索引擎的使用</a></li></ul></li><li><input type=checkbox id=section-9a2fb410fd8d9f919ffc31fa496219d1 class=toggle checked>
+<label for=section-9a2fb410fd8d9f919ffc31fa496219d1 class="flex justify-between"><a role=button>服务</a></label><ul><li><input type=checkbox id=section-3f692b2133bf1d1748a9d3dc08bf694f class=toggle checked>
 <label for=section-3f692b2133bf1d1748a9d3dc08bf694f class="flex justify-between"><a role=button>Dokuwiki</a></label><ul><li><input type=checkbox id=section-462d161a32bf5806953d010d9a4163ad class=toggle>
-<label for=section-462d161a32bf5806953d010d9a4163ad class="flex justify-between"><a role=button>插件与主题</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/indexmenu/>Indexmenu</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/start/>Start</a></li></ul></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E4%B8%AA%E6%80%A7%E5%8C%96%E7%9A%84%E8%AE%BE%E7%BD%AE/>个性化的设置</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/>安装与部署</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/>常见问题</a></li></ul></li><li><input type=checkbox id=section-47d8930e69ae535636dece725656ff1e class=toggle>
+<label for=section-462d161a32bf5806953d010d9a4163ad class="flex justify-between"><a role=button>插件与主题</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/indexmenu/>Indexmenu</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/start/>Start</a></li></ul></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E4%B8%AA%E6%80%A7%E5%8C%96%E7%9A%84%E8%AE%BE%E7%BD%AE/>个性化的设置</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/ class=active>安装与部署</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/>常见问题</a></li></ul></li><li><input type=checkbox id=section-47d8930e69ae535636dece725656ff1e class=toggle>
 <label for=section-47d8930e69ae535636dece725656ff1e class="flex justify-between"><a role=button>Mediasoup</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/mediasoup/mediasoup%E7%9A%84%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/>Mediasoup的安装部署</a></li></ul></li><li><input type=checkbox id=section-8df66e3eaba8973ba13037e4fcb7e550 class=toggle>
 <label for=section-8df66e3eaba8973ba13037e4fcb7e550 class="flex justify-between"><a role=button>Nginx</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/nginx/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/>安装与部署</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/nginx/%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/>常用配置</a></li></ul></li><li><input type=checkbox id=section-5fd3842bb784a7449cf8115d14cf109c class=toggle>
 <label for=section-5fd3842bb784a7449cf8115d14cf109c class="flex justify-between"><a role=button>Prometheus</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/prometheus/%E9%83%A8%E7%BD%B2%E4%B8%8E%E4%BD%BF%E7%94%A8/>部署与使用</a></li></ul></li></ul></li><li><input type=checkbox id=section-6b54dee5f1755981947a8ab64176a2be class=toggle>
@@ -48,5 +59,91 @@
 <label for=section-6690855cc45b11e620ce8c67a5fb62fb class="flex justify-between"><a role=button>Vmware</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E8%99%9A%E6%8B%9F%E6%9C%BA/vmware/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>VMware 遇见的问题及解决方法</a></li></ul></li></ul></li></ul></li><li><span>设备</span><ul><li><input type=checkbox id=section-a1abdcaab6c4668c7ce52ea5a3e37013 class=toggle>
 <label for=section-a1abdcaab6c4668c7ce52ea5a3e37013 class="flex justify-between"><a role=button>树莓派</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>故障排除</a></li><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%83%A7%E5%BD%95/>系统的烧录</a></li></ul></li><li><input type=checkbox id=section-efee4cd7fc6d13515117342cc409f41e class=toggle>
 <label for=section-efee4cd7fc6d13515117342cc409f41e class="flex justify-between"><a role=button>路由器</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8_mini_%E5%88%B7_openwrt/>小米路由器 Mini 刷 Openwrt</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>清松的笔记本</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"></aside></header><article class=markdown></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content></div></aside></main></body></html>
+<strong>安装与部署</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><ul><li><a href=#系统要求>系统要求</a></li><li><a href=#下载>下载</a></li><li><a href=#web-服务的配置>Web 服务的配置</a><ul><li><a href=#nginx>nginx</a></li></ul></li><li><a href=#php-fpm>php-fpm</a></li><li><a href=#启动>启动</a></li><li><a href=#部署脚本>部署脚本</a></li><li><a href=#备份>备份</a></li><li><a href=#参考资料>参考资料</a></li></ul></li></ul></nav></aside></header><article class=markdown><h2 id=系统要求>系统要求
+<a class=anchor href=#%e7%b3%bb%e7%bb%9f%e8%a6%81%e6%b1%82>#</a></h2><p>1. 支持 PHP 的 Web 服务器<br>2. PHP <strong>至少是 5.6 版本</strong>以上的，最好是最新的版本<br>详细要求可参阅
+<a href=https://www.dokuwiki.org/requirements>官网的相关说明</a></p><h2 id=下载>下载
+<a class=anchor href=#%e4%b8%8b%e8%bd%bd>#</a></h2><p>在
+<a href=https://download.dokuwiki.org>官网</a>下载最新稳定版的压缩包<br><img src=https://raw.githubusercontent.com/coderqs/wiki_img/master/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/dokuwiki_%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.png alt=dokuwiki_下载页面></p><h2 id=web-服务的配置>Web 服务的配置
+<a class=anchor href=#web-%e6%9c%8d%e5%8a%a1%e7%9a%84%e9%85%8d%e7%bd%ae>#</a></h2><p>在
+<a href=https://www.dokuwiki.org/install>官网中的 Webserver
+Specifics</a>有提供了几款常见的 web
+服务器的配置，在这里只展示了我用的 nginx 的配置</p><h3 id=nginx>nginx
+<a class=anchor href=#nginx>#</a></h3><p>添加配置文件 <code>/etc/nginx/conf.d/dokuwiki.conf</code></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-txt data-lang=txt><span style=display:flex><span>server {
+</span></span><span style=display:flex><span>    listen 443 ssl;
+</span></span><span style=display:flex><span>    server_name wiki.mydomain.com;
+</span></span><span style=display:flex><span>    root /var/www/html/dokuwiki;
+</span></span><span style=display:flex><span>    index index.html index.php doku.php;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    access_log /var/log/nginx/dokuwiki.access.log;
+</span></span><span style=display:flex><span>    error_log /var/log/nginx/dokuwiki.error.log;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    ssl on;
+</span></span><span style=display:flex><span>    ssl_certificate /etc/letsencrypt/live/wiki.mydomain.com/fullchain.pem;
+</span></span><span style=display:flex><span>    ssl_certificate_key /etc/letsencrypt/live/wiki.mydomain.com/privkey.pem;
+</span></span><span style=display:flex><span>    ssl_session_timeout 5m;
+</span></span><span style=display:flex><span>    ssl_ciphers &#39;AES128+EECDH:AES128+EDH:!aNULL&#39;;
+</span></span><span style=display:flex><span>    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+</span></span><span style=display:flex><span>    ssl_prefer_server_ciphers on;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    location / {
+</span></span><span style=display:flex><span>        try_files $uri $uri/ @dokuwiki;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    location @dokuwiki {
+</span></span><span style=display:flex><span>        rewrite ^/_media/(.*) /lib/exe/fetch.php?media=$1 last;
+</span></span><span style=display:flex><span>        rewrite ^/_detail/(.*) /lib/exe/detail.php?media=$1 last;
+</span></span><span style=display:flex><span>        rewrite ^/_export/([^/]+)/(.*) /doku.php?do=export_$1&amp;id=$2 last;
+</span></span><span style=display:flex><span>        rewrite ^/(.*) /doku.php?id=$1 last;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    location ~ /(data|conf|bin|inc)/ {
+</span></span><span style=display:flex><span>        deny all;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    location ~* \.(css|js|gif|jpe?g|png)$ {
+</span></span><span style=display:flex><span>        expires 1M;
+</span></span><span style=display:flex><span>        add_header Pragma public;
+</span></span><span style=display:flex><span>        add_header Cache-Control &#34;public, must-revalidate, proxy-revalidate&#34;;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    location ~ \.php$ {
+</span></span><span style=display:flex><span>        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+</span></span><span style=display:flex><span>        fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+</span></span><span style=display:flex><span>        fastcgi_index index.php;
+</span></span><span style=display:flex><span>        include fastcgi_params;
+</span></span><span style=display:flex><span>        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+</span></span><span style=display:flex><span>        fastcgi_intercept_errors off;
+</span></span><span style=display:flex><span>        fastcgi_buffer_size 16k;
+</span></span><span style=display:flex><span>        fastcgi_buffers 4 16k;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    location ~ /\.ht {
+</span></span><span style=display:flex><span>        deny all;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>server {
+</span></span><span style=display:flex><span>    listen 80;
+</span></span><span style=display:flex><span>    server_name wiki.mydomain.com;
+</span></span><span style=display:flex><span>    add_header Strict-Transport-Security max-age=2592000;
+</span></span><span style=display:flex><span>    rewrite ^ https://wiki.mydomain.com$request_uri? permanent;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p><strong>注：要记得修改配置中的证书和密钥的路径</strong></p><h2 id=php-fpm>php-fpm
+<a class=anchor href=#php-fpm>#</a></h2><p>将配置文件<code>/etc/php-fpm.d/www.conf</code>中的下列项修改一致</p><pre><code>user = nginx
+group = nginx
+listen = /var/run/php-fpm/php-fpm.sock
+listen.owner = nginx
+listen.group = nginx
+listen.mode = 0660
+</code></pre><p><strong>注：<code>listen</code>的配置要与 nginx 配置中的 <code>fastcgi_pass unix</code> 一致</strong></p><h2 id=启动>启动
+<a class=anchor href=#%e5%90%af%e5%8a%a8>#</a></h2><p>执行下面命令启动 php-fpm、nginx 服务</p><pre><code>systemctl start php-fpm nginx
+systemctl enable php-fpm
+</code></pre><p><strong>注：要记得配置防火墙开放对应的端口或者关闭防火墙</strong></p><h2 id=部署脚本>部署脚本
+<a class=anchor href=#%e9%83%a8%e7%bd%b2%e8%84%9a%e6%9c%ac>#</a></h2><p>详见
+<a href=/%e8%84%9a%e6%9c%ac%e7%ae%a1%e7%90%86/dokuwiki_deploy#dokuwiki_deploy.sh>dokuwiki_deploy#dokuwiki_deploy.sh</a></p><h2 id=备份>备份
+<a class=anchor href=#%e5%a4%87%e4%bb%bd>#</a></h2><p>dokuwiki 的备份比较简单，可以只备份以下目录即可</p><blockquote><p>* <code>data/pages</code> -包含您当前的页面</p><p>* <code>data/meta</code> -包含有关您的页面的元信息（例如最初创建者，订阅者等等）</p><p>* <code>data/media</code> -包含您当前的媒体（图像，PDF等）</p><p>* <code>data/media_meta</code> -媒体的元数据</p><p>* <code>data/attic</code> -页面的所有旧版本</p><p>* <code>data/media_attic</code> -媒体的所有旧版本</p><p>* <code>conf</code> -配置设置</p></blockquote><p>以上出自官网的
+<a href=https://www.dokuwiki.org/faq:backup>备份教程</a>。</p><h2 id=参考资料>参考资料
+<a class=anchor href=#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99>#</a></h2><p><a href=https://www.dokuwiki.org/install:nginx>使用 Nginx 的 DokuWiki -
+官网</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/coderqs/notes/tree/master/content.zh/%e5%b7%a5%e5%85%b7/%e6%9c%8d%e5%8a%a1/dokuwiki/%e5%ae%89%e8%a3%85%e4%b8%8e%e9%83%a8%e7%bd%b2.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>编辑本页</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><ul><li><a href=#系统要求>系统要求</a></li><li><a href=#下载>下载</a></li><li><a href=#web-服务的配置>Web 服务的配置</a><ul><li><a href=#nginx>nginx</a></li></ul></li><li><a href=#php-fpm>php-fpm</a></li><li><a href=#启动>启动</a></li><li><a href=#部署脚本>部署脚本</a></li><li><a href=#备份>备份</a></li><li><a href=#参考资料>参考资料</a></li></ul></li></ul></nav></div></aside></main></body></html>

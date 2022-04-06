@@ -1,7 +1,10 @@
-<!doctype html><html lang=zh dir=ltr><head><meta name=generator content="Hugo 0.96.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="清松的笔记本"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://coderqs.github.io/"><title>清松的笔记本 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="====== 小米路由器 mini 刷 openwrt ======
+将系统刷成开发版 #   在 MiWiFi 下载路由器对应的 ROM 开发版，版本 2.21.109  安装 miwifi_ssh #   在 MiWiFi 开发页面点击 “开启 SSH 工具” 下载 SSH 工具 miwifi_ssh.bin 将路由器绑定小米账号后，在页面会显示 root 的密码 将 miwifi_ssh.bin 放入 U 盘，删除 U 盘上的其他文件，其他操作与刷 ROM 一致  刷成 OpenWrt #  在 OpenWrt 的官网下载对应版本的固件，我的是 小米路由器 MINI，其他型号的路由器可以在官网的 Table of Hardware: Firmware downloads中搜索下载
+scp openwrt*.bin root@192.168.31.1:/tmp cd /tmp mtd -r write openwrt*.bin firmware  如遇以下报错，改 firmware 为 OS1 即可"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content><meta property="og:description" content="====== 小米路由器 mini 刷 openwrt ======
+将系统刷成开发版 #   在 MiWiFi 下载路由器对应的 ROM 开发版，版本 2.21.109  安装 miwifi_ssh #   在 MiWiFi 开发页面点击 “开启 SSH 工具” 下载 SSH 工具 miwifi_ssh.bin 将路由器绑定小米账号后，在页面会显示 root 的密码 将 miwifi_ssh.bin 放入 U 盘，删除 U 盘上的其他文件，其他操作与刷 ROM 一致  刷成 OpenWrt #  在 OpenWrt 的官网下载对应版本的固件，我的是 小米路由器 MINI，其他型号的路由器可以在官网的 Table of Hardware: Firmware downloads中搜索下载
+scp openwrt*.bin root@192.168.31.1:/tmp cd /tmp mtd -r write openwrt*.bin firmware  如遇以下报错，改 firmware 为 OS1 即可"><meta property="og:type" content="article"><meta property="og:url" content="https://coderqs.github.io/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8_mini_%E5%88%B7_openwrt/"><meta property="article:section" content="设备"><title>小米路由器 Mini 刷 Openwrt | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
 <script defer src=/zh.search.min.129ddde2d7305084961f68a038faf80f8040d2fe8ad71b427fe50f41cf387ca8.js integrity="sha256-Ep3d4tcwUISWH2igOPr4D4BA0v6K1xtCf+UPQc84fKg=" crossorigin=anonymous></script>
-<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=https://coderqs.github.io/index.xml title=清松的笔记本></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>清松的笔记本</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><span>计算机语言</span><ul><li><input type=checkbox id=section-2f82c9a464154d0b6f9ef4350045ad73 class=toggle>
 <label for=section-2f82c9a464154d0b6f9ef4350045ad73 class="flex justify-between"><a role=button>程序语言</a></label><ul><li><input type=checkbox id=section-e836dff9c83488818449aee75c856312 class=toggle>
 <label for=section-e836dff9c83488818449aee75c856312 class="flex justify-between"><a role=button>C/C++</a></label><ul><li><input type=checkbox id=section-d7374e89f91838a29dae7b678f7a5cd4 class=toggle>
@@ -46,7 +49,86 @@
 <label for=section-af5fe744a868ddafeb4bc6e6c61b10f9 class="flex justify-between"><a role=button>Wireshark</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/wireshark/%E5%B8%B8%E7%94%A8%E8%BF%87%E6%BB%A4%E6%9D%A1%E4%BB%B6/>Wireshark 常用过滤条件</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/wireshark/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>Wireshark 遇见的问题的解决办法</a></li></ul></li></ul></li><li><input type=checkbox id=section-c69fc995f6425f1074d8ae64ce959c17 class=toggle>
 <label for=section-c69fc995f6425f1074d8ae64ce959c17 class="flex justify-between"><a role=button>虚拟机</a></label><ul><li><input type=checkbox id=section-6690855cc45b11e620ce8c67a5fb62fb class=toggle>
 <label for=section-6690855cc45b11e620ce8c67a5fb62fb class="flex justify-between"><a role=button>Vmware</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E8%99%9A%E6%8B%9F%E6%9C%BA/vmware/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>VMware 遇见的问题及解决方法</a></li></ul></li></ul></li></ul></li><li><span>设备</span><ul><li><input type=checkbox id=section-a1abdcaab6c4668c7ce52ea5a3e37013 class=toggle>
-<label for=section-a1abdcaab6c4668c7ce52ea5a3e37013 class="flex justify-between"><a role=button>树莓派</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>故障排除</a></li><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%83%A7%E5%BD%95/>系统的烧录</a></li></ul></li><li><input type=checkbox id=section-efee4cd7fc6d13515117342cc409f41e class=toggle>
-<label for=section-efee4cd7fc6d13515117342cc409f41e class="flex justify-between"><a role=button>路由器</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8_mini_%E5%88%B7_openwrt/>小米路由器 Mini 刷 Openwrt</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>清松的笔记本</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"></aside></header><article class=markdown></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content></div></aside></main></body></html>
+<label for=section-a1abdcaab6c4668c7ce52ea5a3e37013 class="flex justify-between"><a role=button>树莓派</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>故障排除</a></li><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%83%A7%E5%BD%95/>系统的烧录</a></li></ul></li><li><input type=checkbox id=section-efee4cd7fc6d13515117342cc409f41e class=toggle checked>
+<label for=section-efee4cd7fc6d13515117342cc409f41e class="flex justify-between"><a role=button>路由器</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8_mini_%E5%88%B7_openwrt/ class=active>小米路由器 Mini 刷 Openwrt</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>小米路由器 Mini 刷 Openwrt</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><ul><li><a href=#将系统刷成开发版>将系统刷成开发版</a></li><li><a href=#安装-miwifi_ssh>安装 miwifi_ssh</a></li><li><a href=#刷成-openwrt>刷成 OpenWrt</a></li></ul></li><li><a href=#修改官方源>修改官方源</a></li><li><a href=#openwrt-安装中文语言包>openwrt 安装中文语言包</a><ul><li><a href=#自动安装>自动安装</a></li></ul></li><li><a href=#参考资料>参考资料</a></li><li><a href=#额外记录>额外记录</a><ul><li><a href=#安装-v2ray>安装 v2ray</a></li><li><a href=#遇见的问题>遇见的问题</a><ul><li><a href=#1-verify_pkg_installable-only-have-11312kb-available-on-filesystem-overlay-pkg-v2ray-core-needs-12717>1. verify_pkg_installable: Only have 11312kb available on filesystem /overlay, pkg v2ray-core needs 12717</a></li><li><a href=#2-satisfy_dependencies_for-cannot-satisfy-the-following-dependencies>2. satisfy_dependencies_for: Cannot satisfy the following dependencies</a></li><li><a href=#3-info-service-disabled-main-info-transparent-proxy-disabled>3. [info] Service disabled: main [info] Transparent proxy disabled.</a></li><li><a href=#4-module-lucicbi-not-found>4. module &rsquo;luci.cbi&rsquo; not found</a></li><li><a href=#5>5.</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><p>====== 小米路由器 mini 刷 openwrt ======</p><h2 id=将系统刷成开发版>将系统刷成开发版
+<a class=anchor href=#%e5%b0%86%e7%b3%bb%e7%bb%9f%e5%88%b7%e6%88%90%e5%bc%80%e5%8f%91%e7%89%88>#</a></h2><ol><li>在
+<a href=http://www1.miwifi.com/miwifi_download.html>MiWiFi</a>
+下载路由器对应的 ROM 开发版，版本
+<a href=http://bigota.miwifi.com/xiaoqiang/rom/r1cm/miwifi_r1cm_firmware_2e9b9_2.21.109.bin>2.21.109</a></li></ol><h2 id=安装-miwifi_ssh>安装 miwifi_ssh
+<a class=anchor href=#%e5%ae%89%e8%a3%85-miwifi_ssh>#</a></h2><ol><li>在
+<a href=http://www1.miwifi.com/miwifi_open.html>MiWiFi 开发</a>页面点击
+“开启 SSH 工具” 下载 SSH 工具 <code>miwifi_ssh.bin</code></li><li>将路由器绑定小米账号后，在页面会显示 root 的密码</li><li>将 <code>miwifi_ssh.bin</code> 放入 U 盘，删除 U 盘上的其他文件，其他操作与刷
+ROM 一致</li></ol><h2 id=刷成-openwrt>刷成 OpenWrt
+<a class=anchor href=#%e5%88%b7%e6%88%90-openwrt>#</a></h2><p>在 OpenWrt 的官网下载对应版本的固件，我的是
+<a href=https://openwrt.org/toh/xiaomi/mini>小米路由器
+MINI</a>，其他型号的路由器可以在官网的
+<a href=https://openwrt.org/toh/views/toh_fwdownload>Table
+of Hardware: Firmware
+downloads</a>中搜索下载</p><pre><code>scp openwrt*.bin  root@192.168.31.1:/tmp
+cd  /tmp
+mtd -r write openwrt*.bin firmware 
+</code></pre><p>如遇以下报错，改 <code>firmware</code> 为 <code>OS1</code> 即可</p><pre><code>Could not open mtd device: firmware
+Can't open device for writing!
+</code></pre><h1 id=修改官方源>修改官方源
+<a class=anchor href=#%e4%bf%ae%e6%94%b9%e5%ae%98%e6%96%b9%e6%ba%90>#</a></h1><p><strong>注意：不同 CPU 的路由器的 OpenWrt 源的配置不完全相同，需要根据 CPU
+的型号来配置，小米路由器 MINI 的 CPU 是 MT7620A</strong><br>源配置文件的路径:
+<code>/etc/opkg/distfeeds.conf</code>，将官方源注释掉后填入下面的源</p><pre><code>src/gz reboot_core http://mirrors.ustc.edu.cn/openwrt/releases/19.07.5/targets/ramips/mt7620/packages
+src/gz reboot_base http://mirrors.ustc.edu.cn/openwrt/releases/19.07.5/packages/mipsel_24kc/base
+src/gz reboot_luci http://mirrors.ustc.edu.cn/openwrt/releases/19.07.5/packages/mipsel_24kc/luci
+src/gz reboot_packages http://mirrors.ustc.edu.cn/openwrt/releases/19.07.5/packages/mipsel_24kc/packages
+src/gz reboot_routing http://mirrors.ustc.edu.cn/openwrt/releases/19.07.5/packages/mipsel_24kc/routing
+src/gz reboot_telephony http://mirrors.ustc.edu.cn/openwrt/releases/19.07.5/packages/mipsel_24kc/telephony
+</code></pre><h1 id=openwrt-安装中文语言包>openwrt 安装中文语言包
+<a class=anchor href=#openwrt-%e5%ae%89%e8%a3%85%e4%b8%ad%e6%96%87%e8%af%ad%e8%a8%80%e5%8c%85>#</a></h1><p>语言的设置选项在路由的管理界面中 System -> System -> System Properties
+-> Language and Style ->
+Language，刚刷完的固件时选项只有英文，其他的需要安装</p><h2 id=自动安装>自动安装
+<a class=anchor href=#%e8%87%aa%e5%8a%a8%e5%ae%89%e8%a3%85>#</a></h2><p>在路由的管理页面中 System -> Software，在 Download and install package
+旁边的文本框中输入 <code>luci-i18n-base-zh-cn</code> 点击 OK 系统会自动下载并安装</p><h1 id=参考资料>参考资料
+<a class=anchor href=#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99>#</a></h1><p><a href=https://blog.csdn.net/myweishanli/article/details/45331975>OPENWRT安装中文语言包</a><br><a href=https://www.zzhyun.com/2020/09/04/178/>OpenWrt之v2ray安装及配置</a><br><a href=https://leamtrop.com/2017/05/11/flash-openwrt-squashfs/>小米路由器 mini 刷
+OpenWrt/PandoraBox/LEDE</a></p><hr><h1 id=额外记录>额外记录
+<a class=anchor href=#%e9%a2%9d%e5%a4%96%e8%ae%b0%e5%bd%95>#</a></h1><h2 id=安装-v2ray>安装 v2ray
+<a class=anchor href=#%e5%ae%89%e8%a3%85-v2ray>#</a></h2><p>下载
+<a href=https://github.com/kuoruan/openwrt-v2ray>openwrt-v2ray</a> 和
+<a href=https://github.com/kuoruan/luci-app-v2ray>luci-app-v2ray</a>
+到本地（其中的 luci-i18n-v2ray-zh-cn 是中文包，看需求下载）<br><img src=https://raw.githubusercontent.com/coderqs/wiki_img/master/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/v2ray-core-mini%20%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.PNG alt=v2ray-core-mini下载页面>
+<img src=https://raw.githubusercontent.com/coderqs/wiki_img/master/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/luci-app-v2ray%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.PNG alt=luci-app-v2ray下载页面><br>将下载的文件上传到路由器中，我执行的安装命令是：</p><pre><code>opkg install v2ray-core-mini_4.34.0-1_mipsel_24kc.ipk 
+opkg install luci-app-v2ray_1.5.6_all.ipk
+</code></pre><h2 id=遇见的问题>遇见的问题
+<a class=anchor href=#%e9%81%87%e8%a7%81%e7%9a%84%e9%97%ae%e9%a2%98>#</a></h2><h3 id=1-verify_pkg_installable-only-have-11312kb-available-on-filesystem-overlay-pkg-v2ray-core-needs-12717>1. verify_pkg_installable: Only have 11312kb available on filesystem /overlay, pkg v2ray-core needs 12717
+<a class=anchor href=#1-verify_pkg_installable-only-have-11312kb-available-on-filesystem-overlay-pkg-v2ray-core-needs-12717>#</a></h3><p>~这是因为 <code>/overlay</code> 分区可用空间不够了。<br>(1) 修改<code>/etc/opkg.conf</code>，将其中的<code>overlay_root</code>的值修改为<code>/tmp</code></p><pre><code>dest root /
+dest ram /tmp
+lists_dir ext /var/opkg-lists
+option overlay_root /tmp
+option check_signature
+</code></pre><p>(2) <del>保存文件后再执行安装命令，在安装命令后增加<code>-d ram</code>的参数</del></p><pre><code>opkg install [package] -d ram
+</code></pre><p><del>详情可参见
+<a href=https://forum.openwrt.org/t/opkg-to-ram-how-to/31172>这里</a></del>
+这种方法不行。 -d ram 的选项意思是将软件安装到 /tmp 路径下，而 /tmp 则是
+tmpfs 类型的文件系统（这个可以使用 <code>df -h</code>
+可以看到），是存在内存中的，关机之后就没有了。</p><h3 id=2-satisfy_dependencies_for-cannot-satisfy-the-following-dependencies>2. satisfy_dependencies_for: Cannot satisfy the following dependencies
+<a class=anchor href=#2-satisfy_dependencies_for-cannot-satisfy-the-following-dependencies>#</a></h3><p>查看内核版本的命令 <code>opkg info kernel</code></p><blockquote><p>快照版本在安装空隙时是否使用官方源有一定的机率出行该问题。
+解决的方案是编译阶段就将对应的依赖包安装进去。v2ray并不依赖内核版本</p><p>可以尝试手动安装ip，ipset，iptables-mod-tproxy，dnsmasq-full，resolveip</p><p>然后再安装luci-app-v2ray</p></blockquote><pre><code>opkg remove dnsmasq
+opkg install ip ipset iptables-mod-tproxy dnsmasq-full resolveip
+opkg install luci-app-v2ray
+</code></pre><h3 id=3-info-service-disabled-main-info-transparent-proxy-disabled>3. [info] Service disabled: main [info] Transparent proxy disabled.
+<a class=anchor href=#3-info-service-disabled-main-info-transparent-proxy-disabled>#</a></h3><pre><code>[info] Service disabled: main 
+[info] Transparent proxy disabled.
+</code></pre><p>这时是已经安装成功了，这提示中的配置可以在 <code>/etc/config/v2ray</code> 中修改。</p><h3 id=4-module-lucicbi-not-found>4. module &rsquo;luci.cbi&rsquo; not found
+<a class=anchor href=#4-module-lucicbi-not-found>#</a></h3><p>有说需要
+<a href=https://github.com/kuoruan/luci-app-v2ray/issues/42>安装<code>luci-compat</code>的<code>luci-ap-sqm</code>可以解决</a>，但是使用
+opkg 安装提示</p><pre><code>Unknown package 'luci-compat'.
+Collected errors:
+
+* opkg_install_cmd: Cannot install package luci-compat.
+</code></pre><p><a href=https://blog.csdn.net/weixin_43274097/article/details/107197717>解决方法</a></p><pre><code>opkg update
+opkg install luci luci-base luci-compat
+</code></pre><h3 id=5>5.
+<a class=anchor href=#5>#</a></h3><pre><code>Collected errors:
+ * satisfy_dependencies_for: Cannot satisfy the following dependencies for v2ray-core:
+ *  ca-certificates
+ * opkg_install_cmd: Cannot install package v2ray-core.
+</code></pre><p>执行 <code>opkg update</code> 后再安装一下</p><h4 id=参考资料-1>参考资料
+<a class=anchor href=#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99-1>#</a></h4><p><a href=https://www.haiyun.me/archives/1075.html>编译Openwrt固件安装软件内核版本不一致问题解决</a><br><a href=https://github.com/kuoruan/luci-app-v2ray/issues/116>OpenWRT内核不符合依赖</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/coderqs/notes/tree/master/content.zh/%e8%ae%be%e5%a4%87/%e8%b7%af%e7%94%b1%e5%99%a8/%e5%b0%8f%e7%b1%b3%e8%b7%af%e7%94%b1%e5%99%a8_mini_%e5%88%b7_openwrt.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>编辑本页</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><ul><li><a href=#将系统刷成开发版>将系统刷成开发版</a></li><li><a href=#安装-miwifi_ssh>安装 miwifi_ssh</a></li><li><a href=#刷成-openwrt>刷成 OpenWrt</a></li></ul></li><li><a href=#修改官方源>修改官方源</a></li><li><a href=#openwrt-安装中文语言包>openwrt 安装中文语言包</a><ul><li><a href=#自动安装>自动安装</a></li></ul></li><li><a href=#参考资料>参考资料</a></li><li><a href=#额外记录>额外记录</a><ul><li><a href=#安装-v2ray>安装 v2ray</a></li><li><a href=#遇见的问题>遇见的问题</a><ul><li><a href=#1-verify_pkg_installable-only-have-11312kb-available-on-filesystem-overlay-pkg-v2ray-core-needs-12717>1. verify_pkg_installable: Only have 11312kb available on filesystem /overlay, pkg v2ray-core needs 12717</a></li><li><a href=#2-satisfy_dependencies_for-cannot-satisfy-the-following-dependencies>2. satisfy_dependencies_for: Cannot satisfy the following dependencies</a></li><li><a href=#3-info-service-disabled-main-info-transparent-proxy-disabled>3. [info] Service disabled: main [info] Transparent proxy disabled.</a></li><li><a href=#4-module-lucicbi-not-found>4. module &rsquo;luci.cbi&rsquo; not found</a></li><li><a href=#5>5.</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>

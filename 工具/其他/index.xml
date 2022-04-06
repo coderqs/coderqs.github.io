@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>清松的笔记本</title><link>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/</link><description>Recent content on 清松的笔记本</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/index.xml" rel="self" type="application/rss+xml"/><item><title>Let's Encrypt 免费 SSL 证书申请与续期</title><link>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/let_s_encrypt%E5%85%8D%E8%B4%B9ssl%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E7%BB%AD%E6%9C%9F/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/let_s_encrypt%E5%85%8D%E8%B4%B9ssl%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E7%BB%AD%E6%9C%9F/</guid><description>Let&amp;rsquo;s Encrypt 免费 SSL 证书申请与续期 # Let&amp;rsquo;s Encrypt 是一个于2015年三季度推出的数字证书认证机构，旨在以自动化流程消除手动创建和安装证书的复杂流程，并推广使万维网服务器的加密连接无所不在，为安全网站提供免费的传输层安全性协议（TLS）证书。
+Let&amp;rsquo;s Encrypt 由互联网安全研究小组（缩写 ISRG）提供服务。主要赞助商包括电子前哨基金会、Mozilla 基金会、Akamai 以及思科。2015年4月9日，ISRG 与 Linux 基金会宣布合作。
+Let&amp;rsquo;s Encrypt 宣称这一过程将十分简单、自动化并且免费。
+安装 certbot # certbot 是 Let&amp;rsquo;s Encrypt 的客户端。我的系统是 Centos，使用的是下面的命令
+yum install -y certbot 使用 certbot --version 查看版本显示
+certbot 1.12.0 是此时的最新版。如果不是还可以使用手动安装的方式，在 这里下载最新的发布包解压即可。
+申请 ssl 证书 # 申请的命令格式一般是
+certbot certonly -d &amp;#34;*.youdomain.com&amp;#34; --manual --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory 其中：
+certonly，表示使用的插件，Certbot 有很多插件。不同的插件都可以申请证书，这个可以根据需要自行选择。 -d，为哪些主机申请证书。如果是通配符，输入 *.youdomain.com（根据实际情况替换为你自己的域名）。 –preferred-challenges，使用 DNS 方式校验域名所有权。注：申请通配符证书，只能使用 dns-01 的方式。 –server，Let’s Encrypt ACME v2 版本使用的服务器不同于 v1 版本，需要显示指定 我使用的命令的是</description></item><item><title>OpenSSL 自签证书</title><link>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/openssl%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/openssl%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6/</guid><description>OpenSSL 自签证书 # 检查OpenSSL # 检查是否已经安装openssl：
+openssl version 一般情况下系统会默认安装。
+生成自签名的SSL证书和私钥 # 1. 生成私钥 # openssl genrsa -des3 -out server.pass.key 2048 参数解析:
+genra 生成RSA私钥 -des3 des3算法 -out server.key 生成的私钥文件名 2048 私钥长度 2. 去除私钥中的密码 # openssl rsa -in server.pass.key -out server.key 注意：有密码的私钥是server.pass.key，没有密码的私钥是server.key
+3. 生成CSR(证书签名请求) # openssl req -new -key server.key -out server.csr -subj &amp;#34;/C=CN/ST=Guangdong/L=Guangzhou/O=xdevops/OU=xdevops/CN=gitlab.xdevops.cn&amp;#34; req 生成证书签名请求 -new 新生成 -key 私钥文件 -out 生成的CSR文件 -subj 生成CSR证书的参数 subj 参数说明如下：</description></item><item><title>Pandoc</title><link>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/pandoc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/pandoc/</guid><description>Pandoc # 提供多种标记语言之间的转换的功能，但不完全是双向的，部分是单向的，可转换的关系请参考 此页面。
+使用 # 较短的文字可以使用 在线版来转换，文字过长就需要 下载客户端来转换。
+markdown 转 dokuwiki # pandoc -f markdown_github -t dokuwiki in_filename.md -o out_filename.txt 注：markdown 的语法分支比较多，要选对自己使用的是那种 markdown 语法。
+参考资料 # Pandoc 用户指南</description></item></channel></rss>

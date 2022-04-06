@@ -1,7 +1,16 @@
-<!doctype html><html lang=zh dir=ltr><head><meta name=generator content="Hugo 0.96.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="清松的笔记本"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://coderqs.github.io/"><title>清松的笔记本 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="禁止您无权访问此服务器上的/dokuwiki #  权限问题，检查以下两点
+ 注意下dokuwiki下文件的权限（nginx的执行用户是nginx） dokuwiki.conf的中指定的路径是否正确  because search permissions are missing on a component of the path #  关闭 SELinux 即可，关闭命令
+setenforce 0  访问网页返回 502 bad gateway #  nginx 找不到 php 了，检查下 nginx 对应的服务的配置中的 fastcgi_pass unix 项和 php 的 www.conf 配置文件中的 listen 的值是否一致
+中文文件名乱码 #  在网页创建的中文名字空间和页面后，在服务器上全都显示的都是乱码 在文件 conf/local.php 最后添加
+$conf['fnencode'] = 'utf-8';  修改 inc/pageutils.php
+function utf8_encodeFN($file,$safe=true){ global $conf; if($conf['fnencode'] == 'utf-8') return $file; if($safe && preg_match('#^[a-zA-Z0-9/_\-\."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content><meta property="og:description" content="禁止您无权访问此服务器上的/dokuwiki #  权限问题，检查以下两点
+ 注意下dokuwiki下文件的权限（nginx的执行用户是nginx） dokuwiki.conf的中指定的路径是否正确  because search permissions are missing on a component of the path #  关闭 SELinux 即可，关闭命令
+setenforce 0  访问网页返回 502 bad gateway #  nginx 找不到 php 了，检查下 nginx 对应的服务的配置中的 fastcgi_pass unix 项和 php 的 www.conf 配置文件中的 listen 的值是否一致
+中文文件名乱码 #  在网页创建的中文名字空间和页面后，在服务器上全都显示的都是乱码 在文件 conf/local.php 最后添加
+$conf['fnencode'] = 'utf-8';  修改 inc/pageutils.php
+function utf8_encodeFN($file,$safe=true){ global $conf; if($conf['fnencode'] == 'utf-8') return $file; if($safe && preg_match('#^[a-zA-Z0-9/_\-\."><meta property="og:type" content="article"><meta property="og:url" content="https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"><meta property="article:section" content="工具"><title>常见问题 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
 <script defer src=/zh.search.min.129ddde2d7305084961f68a038faf80f8040d2fe8ad71b427fe50f41cf387ca8.js integrity="sha256-Ep3d4tcwUISWH2igOPr4D4BA0v6K1xtCf+UPQc84fKg=" crossorigin=anonymous></script>
-<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=https://coderqs.github.io/index.xml title=清松的笔记本></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>清松的笔记本</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><span>计算机语言</span><ul><li><input type=checkbox id=section-2f82c9a464154d0b6f9ef4350045ad73 class=toggle>
 <label for=section-2f82c9a464154d0b6f9ef4350045ad73 class="flex justify-between"><a role=button>程序语言</a></label><ul><li><input type=checkbox id=section-e836dff9c83488818449aee75c856312 class=toggle>
 <label for=section-e836dff9c83488818449aee75c856312 class="flex justify-between"><a role=button>C/C++</a></label><ul><li><input type=checkbox id=section-d7374e89f91838a29dae7b678f7a5cd4 class=toggle>
@@ -20,10 +29,10 @@
 <label for=section-2cf97dea5033e59a7b4a4be6f95f3398 class="flex justify-between"><a role=button>科学上网</a></label><ul><li><input type=checkbox id=section-839965107977bc2c3d2afd1daf96a2d0 class=toggle>
 <label for=section-839965107977bc2c3d2afd1daf96a2d0 class="flex justify-between"><a role=button>V2ray</a></label><ul><li><a href=/%E7%BD%91%E7%BB%9C/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/v2ray/v2ray%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/>V2ray安装与配置</a></li></ul></li></ul></li><li><a href=/%E7%BD%91%E7%BB%9C/%E4%BD%BF%E7%94%A8cloudflare%E5%90%8E%E6%97%A0%E9%99%90%E8%B7%B3%E8%BD%AC/>使用cloudflare后无限跳转</a></li></ul></li><li><span>工具</span><ul><li><input type=checkbox id=section-3d78c992a87827d64eb295489bd2db1c class=toggle>
 <label for=section-3d78c992a87827d64eb295489bd2db1c class="flex justify-between"><a role=button>其他</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/let_s_encrypt%E5%85%8D%E8%B4%B9ssl%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E7%BB%AD%E6%9C%9F/>Let's Encrypt 免费 SSL 证书申请与续期</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/openssl%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6/>OpenSSL 自签证书</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/pandoc/>Pandoc</a></li></ul></li><li><input type=checkbox id=section-9dfdebc505554440c767a5b682c855ce class=toggle>
-<label for=section-9dfdebc505554440c767a5b682c855ce class="flex justify-between"><a role=button>技巧</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/>搜索引擎的使用</a></li></ul></li><li><input type=checkbox id=section-9a2fb410fd8d9f919ffc31fa496219d1 class=toggle>
-<label for=section-9a2fb410fd8d9f919ffc31fa496219d1 class="flex justify-between"><a role=button>服务</a></label><ul><li><input type=checkbox id=section-3f692b2133bf1d1748a9d3dc08bf694f class=toggle>
+<label for=section-9dfdebc505554440c767a5b682c855ce class="flex justify-between"><a role=button>技巧</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/>搜索引擎的使用</a></li></ul></li><li><input type=checkbox id=section-9a2fb410fd8d9f919ffc31fa496219d1 class=toggle checked>
+<label for=section-9a2fb410fd8d9f919ffc31fa496219d1 class="flex justify-between"><a role=button>服务</a></label><ul><li><input type=checkbox id=section-3f692b2133bf1d1748a9d3dc08bf694f class=toggle checked>
 <label for=section-3f692b2133bf1d1748a9d3dc08bf694f class="flex justify-between"><a role=button>Dokuwiki</a></label><ul><li><input type=checkbox id=section-462d161a32bf5806953d010d9a4163ad class=toggle>
-<label for=section-462d161a32bf5806953d010d9a4163ad class="flex justify-between"><a role=button>插件与主题</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/indexmenu/>Indexmenu</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/start/>Start</a></li></ul></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E4%B8%AA%E6%80%A7%E5%8C%96%E7%9A%84%E8%AE%BE%E7%BD%AE/>个性化的设置</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/>安装与部署</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/>常见问题</a></li></ul></li><li><input type=checkbox id=section-47d8930e69ae535636dece725656ff1e class=toggle>
+<label for=section-462d161a32bf5806953d010d9a4163ad class="flex justify-between"><a role=button>插件与主题</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/indexmenu/>Indexmenu</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E6%8F%92%E4%BB%B6%E4%B8%8E%E4%B8%BB%E9%A2%98/start/>Start</a></li></ul></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E4%B8%AA%E6%80%A7%E5%8C%96%E7%9A%84%E8%AE%BE%E7%BD%AE/>个性化的设置</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/>安装与部署</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/dokuwiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/ class=active>常见问题</a></li></ul></li><li><input type=checkbox id=section-47d8930e69ae535636dece725656ff1e class=toggle>
 <label for=section-47d8930e69ae535636dece725656ff1e class="flex justify-between"><a role=button>Mediasoup</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/mediasoup/mediasoup%E7%9A%84%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/>Mediasoup的安装部署</a></li></ul></li><li><input type=checkbox id=section-8df66e3eaba8973ba13037e4fcb7e550 class=toggle>
 <label for=section-8df66e3eaba8973ba13037e4fcb7e550 class="flex justify-between"><a role=button>Nginx</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/nginx/%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2/>安装与部署</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/nginx/%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/>常用配置</a></li></ul></li><li><input type=checkbox id=section-5fd3842bb784a7449cf8115d14cf109c class=toggle>
 <label for=section-5fd3842bb784a7449cf8115d14cf109c class="flex justify-between"><a role=button>Prometheus</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%9C%8D%E5%8A%A1/prometheus/%E9%83%A8%E7%BD%B2%E4%B8%8E%E4%BD%BF%E7%94%A8/>部署与使用</a></li></ul></li></ul></li><li><input type=checkbox id=section-6b54dee5f1755981947a8ab64176a2be class=toggle>
@@ -48,5 +57,53 @@
 <label for=section-6690855cc45b11e620ce8c67a5fb62fb class="flex justify-between"><a role=button>Vmware</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E8%99%9A%E6%8B%9F%E6%9C%BA/vmware/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>VMware 遇见的问题及解决方法</a></li></ul></li></ul></li></ul></li><li><span>设备</span><ul><li><input type=checkbox id=section-a1abdcaab6c4668c7ce52ea5a3e37013 class=toggle>
 <label for=section-a1abdcaab6c4668c7ce52ea5a3e37013 class="flex justify-between"><a role=button>树莓派</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>故障排除</a></li><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%83%A7%E5%BD%95/>系统的烧录</a></li></ul></li><li><input type=checkbox id=section-efee4cd7fc6d13515117342cc409f41e class=toggle>
 <label for=section-efee4cd7fc6d13515117342cc409f41e class="flex justify-between"><a role=button>路由器</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8_mini_%E5%88%B7_openwrt/>小米路由器 Mini 刷 Openwrt</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>清松的笔记本</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"></aside></header><article class=markdown></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content></div></aside></main></body></html>
+<strong>常见问题</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><ul><li><a href=#禁止您无权访问此服务器上的dokuwiki>禁止您无权访问此服务器上的/dokuwiki</a></li><li><a href=#because-search-permissions-are-missing-on-a-component-of-the-path><code>because search permissions are missing on a component of the path</code></a></li><li><a href=#访问网页返回-502-bad-gateway>访问网页返回 <code>502 bad gateway</code></a></li><li><a href=#中文文件名乱码>中文文件名乱码</a></li><li><a href=#php-函数xml_parser_create不可用也许您的托管服务提供商出于某种原因禁用了它>PHP 函数xml_parser_create不可用。也许您的托管服务提供商出于某种原因禁用了它</a></li><li><a href=#重定向的次数过多>重定向的次数过多</a></li></ul></li></ul></nav></aside></header><article class=markdown><h2 id=禁止您无权访问此服务器上的dokuwiki>禁止您无权访问此服务器上的/dokuwiki
+<a class=anchor href=#%e7%a6%81%e6%ad%a2%e6%82%a8%e6%97%a0%e6%9d%83%e8%ae%bf%e9%97%ae%e6%ad%a4%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e7%9a%84dokuwiki>#</a></h2><p>权限问题，检查以下两点</p><ol><li>注意下dokuwiki下文件的权限（nginx的执行用户是nginx）</li><li>dokuwiki.conf的中指定的路径是否正确</li></ol><h2 id=because-search-permissions-are-missing-on-a-component-of-the-path><code>because search permissions are missing on a component of the path</code>
+<a class=anchor href=#because-search-permissions-are-missing-on-a-component-of-the-path>#</a></h2><p>关闭 SELinux 即可，关闭命令</p><pre><code>setenforce 0
+</code></pre><h2 id=访问网页返回-502-bad-gateway>访问网页返回 <code>502 bad gateway</code>
+<a class=anchor href=#%e8%ae%bf%e9%97%ae%e7%bd%91%e9%a1%b5%e8%bf%94%e5%9b%9e-502-bad-gateway>#</a></h2><p>nginx 找不到 php 了，检查下 nginx 对应的服务的配置中的
+<code>fastcgi_pass unix</code> 项和 php 的 <code>www.conf</code> 配置文件中的 <code>listen</code>
+的值是否一致</p><h2 id=中文文件名乱码>中文文件名乱码
+<a class=anchor href=#%e4%b8%ad%e6%96%87%e6%96%87%e4%bb%b6%e5%90%8d%e4%b9%b1%e7%a0%81>#</a></h2><p>在网页创建的中文名字空间和页面后，在服务器上全都显示的都是乱码 在文件
+<code>conf/local.php</code> 最后添加</p><pre><code>$conf['fnencode'] = 'utf-8';
+</code></pre><p>修改 <code>inc/pageutils.php</code></p><pre><code>function utf8_encodeFN($file,$safe=true){
+    global $conf;
+    if($conf['fnencode'] == 'utf-8') return $file;
+
+    if($safe &amp;&amp; preg_match('#^[a-zA-Z0-9/_\-\.%]+$#',$file)){
+        return $file;
+    }
+
+    if($conf['fnencode'] == 'safe'){
+        return SafeFN::encode($file);
+    }
+
+    // 注释掉下面两行
+    // $file = urlencode($file);
+    // $file = str_replace('%2F','/',$file);
+
+    return $file;
+}
+
+function utf8_decodeFN($file){
+    global $conf;
+    if($conf['fnencode'] == 'utf-8') return $file;
+
+    if($conf['fnencode'] == 'safe'){
+        return SafeFN::decode($file);
+    }
+
+    // 注释掉下面一行
+    // return urldecode($file);
+    // 加上下面这行
+    return $file;
+}
+</code></pre><p>参考自：
+<a href=https://www.wangbin.io/blog/it/wiki-dokuwiki-utf8.html>dokuwiki：解决中文乱码问题</a></p><h2 id=php-函数xml_parser_create不可用也许您的托管服务提供商出于某种原因禁用了它>PHP 函数xml_parser_create不可用。也许您的托管服务提供商出于某种原因禁用了它
+<a class=anchor href=#php-%e5%87%bd%e6%95%b0xml_parser_create%e4%b8%8d%e5%8f%af%e7%94%a8%e4%b9%9f%e8%ae%b8%e6%82%a8%e7%9a%84%e6%89%98%e7%ae%a1%e6%9c%8d%e5%8a%a1%e6%8f%90%e4%be%9b%e5%95%86%e5%87%ba%e4%ba%8e%e6%9f%90%e7%a7%8d%e5%8e%9f%e5%9b%a0%e7%a6%81%e7%94%a8%e4%ba%86%e5%ae%83>#</a></h2><p>没有安装 xml 模块，搜索安装对应的模块即可</p><pre><code>yum install -y php-xml.x86_64
+</code></pre><h2 id=重定向的次数过多>重定向的次数过多
+<a class=anchor href=#%e9%87%8d%e5%ae%9a%e5%90%91%e7%9a%84%e6%ac%a1%e6%95%b0%e8%bf%87%e5%a4%9a>#</a></h2><p>因为给网站套上了 cdn，其中的 ssl
+设置不正确，详细原因和解决方法请参考《
+<a href=/%E7%BD%91%E7%BB%9C/%E4%BD%BF%E7%94%A8cloudflare%E5%90%8E%E6%97%A0%E9%99%90%E8%B7%B3%E8%BD%AC/>使用cloudflare后无限跳转</a>》</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/coderqs/notes/tree/master/content.zh/%e5%b7%a5%e5%85%b7/%e6%9c%8d%e5%8a%a1/dokuwiki/%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>编辑本页</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><ul><li><a href=#禁止您无权访问此服务器上的dokuwiki>禁止您无权访问此服务器上的/dokuwiki</a></li><li><a href=#because-search-permissions-are-missing-on-a-component-of-the-path><code>because search permissions are missing on a component of the path</code></a></li><li><a href=#访问网页返回-502-bad-gateway>访问网页返回 <code>502 bad gateway</code></a></li><li><a href=#中文文件名乱码>中文文件名乱码</a></li><li><a href=#php-函数xml_parser_create不可用也许您的托管服务提供商出于某种原因禁用了它>PHP 函数xml_parser_create不可用。也许您的托管服务提供商出于某种原因禁用了它</a></li><li><a href=#重定向的次数过多>重定向的次数过多</a></li></ul></li></ul></nav></div></aside></main></body></html>

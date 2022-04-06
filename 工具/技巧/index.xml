@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>清松的笔记本</title><link>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/</link><description>Recent content on 清松的笔记本</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/</guid><description>======= 常用的指令 =======
+1. &amp;quot; (双引号) # 把搜索词放在双引号（英文半角）中，代表完全匹配搜索，也就是说搜索结果返回的页面包含双引号中出现的所有的词，连顺序也必须完全匹配。Google和百度都支持这个指令。 例如：
+&amp;ldquo;seo方法图片&amp;rdquo;
+2. - (减号) # 代表搜索不包含减号后面的词的页面。使用这个指令时减号前面必须是空格，减号后面没有空格，紧跟着需要排除的词。Google和百度都支持这个指令。 例如：
+搜索 -引擎
+返回的结果中包含搜索但不包含引擎
+3. * (星号) # 是常用的通配符，也可以用在搜索中。百度不支持 * 号搜索指令。 例如：
+搜索*擎
+其中的*号代表任何文字。返回的结果就不仅包含“搜索引擎”，还包含了“搜索收擎”，“搜索巨擎”等内容。
+4. ~(波浪线) # 代表搜索包含这个词以及合适的近义词的页面。貌似百度不支持该搜索指令 例如：
+~elderly
+所得到的页面就会不仅是包括“elderly”这个词，还会有包括“senior”、“older”、“aged”等等词的页面。
+5. inurl # inurl: 指令用于搜索查询词出现在url 中的页面，inurl 指令支持中文和英文。百度和Google都支持这个指令。 例如：
+inurl:搜索引擎优化
+返回的结果都是网址url 中包含“搜索引擎优化”的页面。由于关键词出现在url 中对排名有一定影响，使用inurl:搜索可以更准确地找到竞争对手。
+6. inanchor # inanchor:指令返回的结果是导入链接锚文字中包含搜索词的页面。百度不支持inanchor。 例如：
+inanchor:点击这里</description></item></channel></rss>

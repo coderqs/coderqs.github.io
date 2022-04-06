@@ -1,7 +1,22 @@
-<!doctype html><html lang=zh dir=ltr><head><meta name=generator content="Hugo 0.96.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="清松的笔记本"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://coderqs.github.io/"><title>清松的笔记本 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Let&rsquo;s Encrypt 免费 SSL 证书申请与续期 #   Let&rsquo;s Encrypt 是一个于2015年三季度推出的数字证书认证机构，旨在以自动化流程消除手动创建和安装证书的复杂流程，并推广使万维网服务器的加密连接无所不在，为安全网站提供免费的传输层安全性协议（TLS）证书。
+Let&rsquo;s Encrypt 由互联网安全研究小组（缩写 ISRG）提供服务。主要赞助商包括电子前哨基金会、Mozilla 基金会、Akamai 以及思科。2015年4月9日，ISRG 与 Linux 基金会宣布合作。
+Let&rsquo;s Encrypt 宣称这一过程将十分简单、自动化并且免费。
+安装 certbot #  certbot 是 Let&rsquo;s Encrypt 的客户端。我的系统是 Centos，使用的是下面的命令
+yum install -y certbot  使用 certbot --version 查看版本显示
+certbot 1.12.0  是此时的最新版。如果不是还可以使用手动安装的方式，在 这里下载最新的发布包解压即可。
+申请 ssl 证书 #  申请的命令格式一般是
+certbot certonly -d &#34;*.youdomain.com&#34; --manual --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory 其中：
+ certonly，表示使用的插件，Certbot 有很多插件。不同的插件都可以申请证书，这个可以根据需要自行选择。 -d，为哪些主机申请证书。如果是通配符，输入 *.youdomain.com（根据实际情况替换为你自己的域名）。 –preferred-challenges，使用 DNS 方式校验域名所有权。注：申请通配符证书，只能使用 dns-01 的方式。 –server，Let’s Encrypt ACME v2 版本使用的服务器不同于 v1 版本，需要显示指定  我使用的命令的是"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Let's Encrypt 免费 SSL 证书申请与续期"><meta property="og:description" content="Let&rsquo;s Encrypt 免费 SSL 证书申请与续期 #   Let&rsquo;s Encrypt 是一个于2015年三季度推出的数字证书认证机构，旨在以自动化流程消除手动创建和安装证书的复杂流程，并推广使万维网服务器的加密连接无所不在，为安全网站提供免费的传输层安全性协议（TLS）证书。
+Let&rsquo;s Encrypt 由互联网安全研究小组（缩写 ISRG）提供服务。主要赞助商包括电子前哨基金会、Mozilla 基金会、Akamai 以及思科。2015年4月9日，ISRG 与 Linux 基金会宣布合作。
+Let&rsquo;s Encrypt 宣称这一过程将十分简单、自动化并且免费。
+安装 certbot #  certbot 是 Let&rsquo;s Encrypt 的客户端。我的系统是 Centos，使用的是下面的命令
+yum install -y certbot  使用 certbot --version 查看版本显示
+certbot 1.12.0  是此时的最新版。如果不是还可以使用手动安装的方式，在 这里下载最新的发布包解压即可。
+申请 ssl 证书 #  申请的命令格式一般是
+certbot certonly -d &#34;*.youdomain.com&#34; --manual --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory 其中：
+ certonly，表示使用的插件，Certbot 有很多插件。不同的插件都可以申请证书，这个可以根据需要自行选择。 -d，为哪些主机申请证书。如果是通配符，输入 *.youdomain.com（根据实际情况替换为你自己的域名）。 –preferred-challenges，使用 DNS 方式校验域名所有权。注：申请通配符证书，只能使用 dns-01 的方式。 –server，Let’s Encrypt ACME v2 版本使用的服务器不同于 v1 版本，需要显示指定  我使用的命令的是"><meta property="og:type" content="article"><meta property="og:url" content="https://coderqs.github.io/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/let_s_encrypt%E5%85%8D%E8%B4%B9ssl%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E7%BB%AD%E6%9C%9F/"><meta property="article:section" content="工具"><title>Let's Encrypt 免费 SSL 证书申请与续期 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
 <script defer src=/zh.search.min.129ddde2d7305084961f68a038faf80f8040d2fe8ad71b427fe50f41cf387ca8.js integrity="sha256-Ep3d4tcwUISWH2igOPr4D4BA0v6K1xtCf+UPQc84fKg=" crossorigin=anonymous></script>
-<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=https://coderqs.github.io/index.xml title=清松的笔记本></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>清松的笔记本</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><span>计算机语言</span><ul><li><input type=checkbox id=section-2f82c9a464154d0b6f9ef4350045ad73 class=toggle>
 <label for=section-2f82c9a464154d0b6f9ef4350045ad73 class="flex justify-between"><a role=button>程序语言</a></label><ul><li><input type=checkbox id=section-e836dff9c83488818449aee75c856312 class=toggle>
 <label for=section-e836dff9c83488818449aee75c856312 class="flex justify-between"><a role=button>C/C++</a></label><ul><li><input type=checkbox id=section-d7374e89f91838a29dae7b678f7a5cd4 class=toggle>
@@ -18,8 +33,8 @@
 <label for=section-81d3a28b1552a0aece54edf98bbb0d06 class="flex justify-between"><a role=button>故障记录</a></label><ul><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/%E6%95%85%E9%9A%9C%E8%AE%B0%E5%BD%95/linux%E8%84%9A%E6%9C%AC%E8%87%AA%E5%B7%B1%E5%8F%AF%E4%BB%A5%E5%8D%95%E7%8B%AC%E6%89%A7%E8%A1%8C%E4%BD%86%E5%9C%A8service%E6%96%87%E4%BB%B6%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%B0%B1%E9%94%99%E8%AF%AF/>Linux脚本自己可以单独执行但在service文件中使用就错误</a></li></ul></li><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/%E7%94%A8%E6%88%B7%E7%9B%B8%E5%85%B3/>Linux 下的问题及解决方法 - 用户相关"</a></li><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3/>Linux 下的问题及解决方法 - 系统相关</a></li><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/shell%E7%9B%B8%E5%85%B3/>Shell 脚本相关的问题的解决方法</a></li></ul></li><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/centos7%E6%8C%82%E8%BD%BDwindows%E7%9A%84%E5%85%B1%E4%BA%AB%E7%9B%AE%E5%BD%95/>Centos7挂载windows的共享目录</a></li><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/firewalld%E7%9A%84%E8%A7%84%E5%88%99%E9%85%8D%E7%BD%AE/>Firewalld的规则配置</a></li><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/mailx%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/>Mailx安装与使用</a></li><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/%E5%8D%87%E7%BA%A7gcc/>升级gcc</a></li><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/%E6%9F%A5%E7%9C%8B%E5%BA%93%E7%9A%84%E7%AC%A6%E5%8F%B7/>查看库的符号</a></li><li><a href=/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/%E8%AE%BE%E7%BD%AE%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/>设置系统时区</a></li></ul></li><li><input type=checkbox id=section-5e6f2b4bb314c127d413b296515fdd8c class=toggle>
 <label for=section-5e6f2b4bb314c127d413b296515fdd8c class="flex justify-between"><a role=button>Windows</a></label><ul></ul></li></ul></li><li><span>网络</span><ul><li><input type=checkbox id=section-2cf97dea5033e59a7b4a4be6f95f3398 class=toggle>
 <label for=section-2cf97dea5033e59a7b4a4be6f95f3398 class="flex justify-between"><a role=button>科学上网</a></label><ul><li><input type=checkbox id=section-839965107977bc2c3d2afd1daf96a2d0 class=toggle>
-<label for=section-839965107977bc2c3d2afd1daf96a2d0 class="flex justify-between"><a role=button>V2ray</a></label><ul><li><a href=/%E7%BD%91%E7%BB%9C/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/v2ray/v2ray%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/>V2ray安装与配置</a></li></ul></li></ul></li><li><a href=/%E7%BD%91%E7%BB%9C/%E4%BD%BF%E7%94%A8cloudflare%E5%90%8E%E6%97%A0%E9%99%90%E8%B7%B3%E8%BD%AC/>使用cloudflare后无限跳转</a></li></ul></li><li><span>工具</span><ul><li><input type=checkbox id=section-3d78c992a87827d64eb295489bd2db1c class=toggle>
-<label for=section-3d78c992a87827d64eb295489bd2db1c class="flex justify-between"><a role=button>其他</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/let_s_encrypt%E5%85%8D%E8%B4%B9ssl%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E7%BB%AD%E6%9C%9F/>Let's Encrypt 免费 SSL 证书申请与续期</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/openssl%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6/>OpenSSL 自签证书</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/pandoc/>Pandoc</a></li></ul></li><li><input type=checkbox id=section-9dfdebc505554440c767a5b682c855ce class=toggle>
+<label for=section-839965107977bc2c3d2afd1daf96a2d0 class="flex justify-between"><a role=button>V2ray</a></label><ul><li><a href=/%E7%BD%91%E7%BB%9C/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/v2ray/v2ray%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/>V2ray安装与配置</a></li></ul></li></ul></li><li><a href=/%E7%BD%91%E7%BB%9C/%E4%BD%BF%E7%94%A8cloudflare%E5%90%8E%E6%97%A0%E9%99%90%E8%B7%B3%E8%BD%AC/>使用cloudflare后无限跳转</a></li></ul></li><li><span>工具</span><ul><li><input type=checkbox id=section-3d78c992a87827d64eb295489bd2db1c class=toggle checked>
+<label for=section-3d78c992a87827d64eb295489bd2db1c class="flex justify-between"><a role=button>其他</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/let_s_encrypt%E5%85%8D%E8%B4%B9ssl%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8E%E7%BB%AD%E6%9C%9F/ class=active>Let's Encrypt 免费 SSL 证书申请与续期</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/openssl%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6/>OpenSSL 自签证书</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E5%85%B6%E4%BB%96/pandoc/>Pandoc</a></li></ul></li><li><input type=checkbox id=section-9dfdebc505554440c767a5b682c855ce class=toggle>
 <label for=section-9dfdebc505554440c767a5b682c855ce class="flex justify-between"><a role=button>技巧</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E6%8A%80%E5%B7%A7/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%9A%84%E4%BD%BF%E7%94%A8/>搜索引擎的使用</a></li></ul></li><li><input type=checkbox id=section-9a2fb410fd8d9f919ffc31fa496219d1 class=toggle>
 <label for=section-9a2fb410fd8d9f919ffc31fa496219d1 class="flex justify-between"><a role=button>服务</a></label><ul><li><input type=checkbox id=section-3f692b2133bf1d1748a9d3dc08bf694f class=toggle>
 <label for=section-3f692b2133bf1d1748a9d3dc08bf694f class="flex justify-between"><a role=button>Dokuwiki</a></label><ul><li><input type=checkbox id=section-462d161a32bf5806953d010d9a4163ad class=toggle>
@@ -48,5 +63,102 @@
 <label for=section-6690855cc45b11e620ce8c67a5fb62fb class="flex justify-between"><a role=button>Vmware</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E8%99%9A%E6%8B%9F%E6%9C%BA/vmware/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>VMware 遇见的问题及解决方法</a></li></ul></li></ul></li></ul></li><li><span>设备</span><ul><li><input type=checkbox id=section-a1abdcaab6c4668c7ce52ea5a3e37013 class=toggle>
 <label for=section-a1abdcaab6c4668c7ce52ea5a3e37013 class="flex justify-between"><a role=button>树莓派</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>故障排除</a></li><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%83%A7%E5%BD%95/>系统的烧录</a></li></ul></li><li><input type=checkbox id=section-efee4cd7fc6d13515117342cc409f41e class=toggle>
 <label for=section-efee4cd7fc6d13515117342cc409f41e class="flex justify-between"><a role=button>路由器</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8_mini_%E5%88%B7_openwrt/>小米路由器 Mini 刷 Openwrt</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>清松的笔记本</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"></aside></header><article class=markdown></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content></div></aside></main></body></html>
+<strong>Let's Encrypt 免费 SSL 证书申请与续期</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#lets-encrypt-免费-ssl-证书申请与续期>Let&rsquo;s Encrypt 免费 SSL 证书申请与续期</a><ul><li><a href=#安装-certbot>安装 certbot</a></li><li><a href=#申请-ssl-证书>申请 ssl 证书</a><ul><li><a href=#证书续期>证书续期</a></li></ul></li><li><a href=#遇见的问题>遇见的问题</a><ul><li><a href=#no-package-certbot-available>no package certbot available</a></li><li><a href=#续签失败>续签失败</a></li></ul></li><li><a href=#参考资料>参考资料</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=lets-encrypt-免费-ssl-证书申请与续期>Let&rsquo;s Encrypt 免费 SSL 证书申请与续期
+<a class=anchor href=#lets-encrypt-%e5%85%8d%e8%b4%b9-ssl-%e8%af%81%e4%b9%a6%e7%94%b3%e8%af%b7%e4%b8%8e%e7%bb%ad%e6%9c%9f>#</a></h1><p><a href=https://letsencrypt.org/>Let&rsquo;s Encrypt</a>
+是一个于2015年三季度推出的数字证书认证机构，旨在以自动化流程消除手动创建和安装证书的复杂流程，并推广使万维网服务器的加密连接无所不在，为安全网站提供免费的传输层安全性协议（TLS）证书。<br>Let&rsquo;s Encrypt 由互联网安全研究小组（缩写
+ISRG）提供服务。主要赞助商包括电子前哨基金会、Mozilla 基金会、Akamai
+以及思科。2015年4月9日，ISRG 与 Linux 基金会宣布合作。<br>Let&rsquo;s Encrypt 宣称这一过程将十分简单、自动化并且免费。</p><h2 id=安装-certbot>安装 certbot
+<a class=anchor href=#%e5%ae%89%e8%a3%85-certbot>#</a></h2><p>certbot 是 Let&rsquo;s Encrypt 的客户端。我的系统是 Centos，使用的是下面的命令</p><pre><code>yum install -y certbot
+</code></pre><p>使用 <code>certbot --version</code> 查看版本显示</p><pre><code>certbot 1.12.0
+</code></pre><p>是此时的最新版。如果不是还可以使用手动安装的方式，在
+<a href=https://github.com/certbot/certbot/releases>这里</a>下载最新的发布包解压即可。</p><h2 id=申请-ssl-证书>申请 ssl 证书
+<a class=anchor href=#%e7%94%b3%e8%af%b7-ssl-%e8%af%81%e4%b9%a6>#</a></h2><p>申请的命令格式一般是</p><pre tabindex=0><code>certbot certonly -d &#34;*.youdomain.com&#34; --manual --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory
+</code></pre><p>其中：</p><ul><li><code>certonly</code>，表示使用的插件，Certbot
+有很多插件。不同的插件都可以申请证书，这个可以根据需要自行选择。</li><li><code>-d</code>，为哪些主机申请证书。如果是通配符，输入
+<code>*.youdomain.com</code>（<strong>根据实际情况替换为你自己的域名</strong>）。</li><li><code>–preferred-challenges</code>，使用 DNS
+方式校验域名所有权。<strong>注：申请通配符证书，只能使用 dns-01 的方式。</strong></li><li><code>–server</code>，Let’s Encrypt ACME v2 版本使用的服务器不同于 v1
+版本，需要显示指定</li></ul><p>我使用的命令的是</p><pre tabindex=0><code>certbot certonly -d &#34;*.coderqs.com&#34; --manual --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory
+</code></pre><p>输入上述命令后，会有如下提示：</p><pre tabindex=0><code>    Saving debug log to /var/log/letsencrypt/letsencrypt.log
+    Plugins selected: Authenticator manual, Installer None
+    Enter email address (used for urgent renewal and security notices)
+     (Enter &#39;c&#39; to cancel): youemail@domain.com
+
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Please read the Terms of Service at
+    https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf. You must
+    agree in order to register with the ACME server. Do you agree?
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    (Y)es/(N)o: Y
+
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Would you be willing, once your first certificate is successfully issued, to
+    share your email address with the Electronic Frontier Foundation, a founding
+    partner of the Let&#39;s Encrypt project and the non-profit organization that
+    develops Certbot? We&#39;d like to send you email about our work encrypting the web,
+    EFF news, campaigns, and ways to support digital freedom.
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    (Y)es/(N)o: Y
+    Account registered.
+    Requesting a certificate for *.coderqs.com
+    Performing the following challenges:
+    dns-01 challenge for coderqs.com
+
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Please deploy a DNS TXT record under the name
+    _acme-challenge.coderqs.com with the following value:
+
+    5kugLqDPaeD3hEYZl2bHae0VgQoRUt1if39LbuQnr_A
+
+    Before continuing, verify the record is deployed.
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Press Enter to Continue
+</code></pre><p>上面的邮箱输入你自己常用的，其他的都输入 <code>Y</code>
+就可以，但是<strong>要注意最后一条，先不要着急按回车</strong></p><pre tabindex=0><code>    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Please deploy a DNS TXT record under the name
+    _acme-challenge.coderqs.com with the following value:
+
+    5kugLqDPaeD3hEYZl2bHae0VgQoRUt1if39LbuQnr_A
+
+    Before continuing, verify the record is deployed.
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Press Enter to Continue
+</code></pre><p>这里是让你在你的域名管理器中添加一条 TXT
+记录来证明这个域名是你的（<strong>如果这里你手快按了回车，一定要再执行一遍命令，因为让你添加的
+TXT 的值会改变</strong>，像上面的提示要添加的 TXT
+是主机名为<code>_acme-challenge</code>，内容为
+<code>5kugLqDPaeD3hEYZl2bHae0VgQoRUt1if39LbuQnr_A</code> 的记录）。添加完 TXT
+后，需要等待其生效后再在这里按回车即可（<strong>certbot
+已经自动退出的话可以再执行一遍命令，一般客户端自动退出时候字符串的值是不会变的</strong>）。</p><p><strong>注：等待 TXT 修改生效的时间会比较长，可以使用 [[|nslookup]]
+来查看 TXT 有没有生效，我使用的命令如下（此命令 windows 与 linux
+都支持）</strong></p><pre tabindex=0><code>    nslookup -qt=txt _acme-challenge.coderqs.com
+</code></pre><p>当其类似如下显示时既是已生效</p><pre tabindex=0><code>    *** Invalid option: qt=txt
+    Server:  UnKnown
+    Address:  82.163.142.9
+
+    Non-authoritative answer::
+    _acme-challenge.coderqs.com     text =
+
+            &#34;IMdfdsfsJDqBRyRaaEgPPQlEuvtxJQAgWZTIVbLuzDi8U&#34;
+</code></pre><h3 id=证书续期>证书续期
+<a class=anchor href=#%e8%af%81%e4%b9%a6%e7%bb%ad%e6%9c%9f>#</a></h3><p>Let&rsquo;s Encrypt 的证书有效期是 90 天，允许提前 30
+天续签，执行下面命令会续签所有的证书</p><pre tabindex=0><code>    certbot renew
+</code></pre><p>将该命令添加到 crontab 中可以实现自动续签。</p><h2 id=遇见的问题>遇见的问题
+<a class=anchor href=#%e9%81%87%e8%a7%81%e7%9a%84%e9%97%ae%e9%a2%98>#</a></h2><h3 id=no-package-certbot-available>no package certbot available
+<a class=anchor href=#no-package-certbot-available>#</a></h3><p>在 Centos7 上安装时提示<code>no package certbot available</code>，原因不明</p><h5 id=解决方法>解决方法
+<a class=anchor href=#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95>#</a></h5><pre tabindex=0><code>    sudo yum -y install yum-utils
+    sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    sudo yum-config-manager -y --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional
+    sudo yum -y install certbot
+</code></pre><p>参考自
+<a href=https://stackoverflow.com/questions/53545436/no-package-certbot-available>CentOS 7: No package certbot available.
+#3257</a></p><h3 id=续签失败>续签失败
+<a class=anchor href=#%e7%bb%ad%e7%ad%be%e5%a4%b1%e8%b4%a5>#</a></h3><p>续签失败错误提示：</p><pre tabindex=0><code>    Could not choose appropriate plugin: The manual plugin is not working; there may be problems with your existing configuration. The error was: PluginError(&#39;An authentication script must be provided with --manual-auth-hook when using the manual plugin non-interactively.&#39;,). Skipping.
+</code></pre><p>原因是申请时没有指定 <code>--manual-auth-hook</code> 参数</p><h4 id=解决方法-1>解决方法
+<a class=anchor href=#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95-1>#</a></h4><p>加上 <code>--manual-auth-hook</code> 参数重新申请一遍</p><h2 id=参考资料>参考资料
+<a class=anchor href=#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99>#</a></h2><p><a href=https://en.wikipedia.org/wiki/wiki/Let%27s_Encrypt>Let&rsquo;s Encrypt -
+维基百科</a><br><a href=https://jusene.github.io/2018/08/05/letsencrypt/>Let&rsquo;s
+Encrypt免费申请SSL证书</a><br><a href=https://www.4spaces.org/nginx-lets-encrypt-ssl/>Nginx启用Let’s Encrypt
+SSL证书</a><br><a href=https://www.bbsmax.com/A/ZOJPvy8Odv/>在macOS平台下制作SSL证书，免费域名通配符证、单域名证书、多域名证书教程</a><br><a href="https://blog.csdn.net/u012291393/article/details/78768547?utm_source=blogxgwz0">Letsencrypt通过DNS
+TXT记录来验证域名有效性</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/coderqs/notes/tree/master/content.zh/%e5%b7%a5%e5%85%b7/%e5%85%b6%e4%bb%96/let_s_encrypt%e5%85%8d%e8%b4%b9ssl%e8%af%81%e4%b9%a6%e7%94%b3%e8%af%b7%e4%b8%8e%e7%bb%ad%e6%9c%9f.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>编辑本页</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#lets-encrypt-免费-ssl-证书申请与续期>Let&rsquo;s Encrypt 免费 SSL 证书申请与续期</a><ul><li><a href=#安装-certbot>安装 certbot</a></li><li><a href=#申请-ssl-证书>申请 ssl 证书</a><ul><li><a href=#证书续期>证书续期</a></li></ul></li><li><a href=#遇见的问题>遇见的问题</a><ul><li><a href=#no-package-certbot-available>no package certbot available</a></li><li><a href=#续签失败>续签失败</a></li></ul></li><li><a href=#参考资料>参考资料</a></li></ul></li></ul></nav></div></aside></main></body></html>

@@ -1,7 +1,16 @@
-<!doctype html><html lang=zh dir=ltr><head><meta name=generator content="Hugo 0.96.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="清松的笔记本"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://coderqs.github.io/"><title>清松的笔记本 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
+<!doctype html><html lang=zh dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="树莓派系统的烧录 #  环境准备 #  系统镜像 #  树莓派有专用的系统 raspbian 可以在其 官网下载。不过我要使用的是 Centos7，系统文件可在其官网的 下载页面进行下载，注意一定要下载 ARM 版本。
+使用的工具 #  SD Memory Card formatter #  这个是用于格式 SD 卡的，它有 Windows 版和 Mac 版，我使用的是 Windows 版。
+win32diskimager #  这个是用于向 SD 卡烧录系统的，在其 官网下载最新的稳定版就可以，我是用的是 1.0.0 版本。
+烧录 #  格式化 TF 卡 #  将卡连接到电脑上，打开 SD Memory Card formatter。在上面选择要格式化的 TF 卡，其他配置不用调，点击 Format
+烧录系统 #  打开 win32diskimager 在上面选择刚下载的 CentOS 的映像文件，注意旁边的设备不要选错，然后点击写入
+烧录好系统后，在我的电脑可以看到 TF 卡变成一个只有几十 M 的 boot 盘"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content><meta property="og:description" content="树莓派系统的烧录 #  环境准备 #  系统镜像 #  树莓派有专用的系统 raspbian 可以在其 官网下载。不过我要使用的是 Centos7，系统文件可在其官网的 下载页面进行下载，注意一定要下载 ARM 版本。
+使用的工具 #  SD Memory Card formatter #  这个是用于格式 SD 卡的，它有 Windows 版和 Mac 版，我使用的是 Windows 版。
+win32diskimager #  这个是用于向 SD 卡烧录系统的，在其 官网下载最新的稳定版就可以，我是用的是 1.0.0 版本。
+烧录 #  格式化 TF 卡 #  将卡连接到电脑上，打开 SD Memory Card formatter。在上面选择要格式化的 TF 卡，其他配置不用调，点击 Format
+烧录系统 #  打开 win32diskimager 在上面选择刚下载的 CentOS 的映像文件，注意旁边的设备不要选错，然后点击写入
+烧录好系统后，在我的电脑可以看到 TF 卡变成一个只有几十 M 的 boot 盘"><meta property="og:type" content="article"><meta property="og:url" content="https://coderqs.github.io/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%83%A7%E5%BD%95/"><meta property="article:section" content="设备"><title>系统的烧录 | 清松的笔记本</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
 <script defer src=/zh.search.min.129ddde2d7305084961f68a038faf80f8040d2fe8ad71b427fe50f41cf387ca8.js integrity="sha256-Ep3d4tcwUISWH2igOPr4D4BA0v6K1xtCf+UPQc84fKg=" crossorigin=anonymous></script>
-<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=https://coderqs.github.io/index.xml title=清松的笔记本></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>清松的笔记本</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><span>计算机语言</span><ul><li><input type=checkbox id=section-2f82c9a464154d0b6f9ef4350045ad73 class=toggle>
 <label for=section-2f82c9a464154d0b6f9ef4350045ad73 class="flex justify-between"><a role=button>程序语言</a></label><ul><li><input type=checkbox id=section-e836dff9c83488818449aee75c856312 class=toggle>
 <label for=section-e836dff9c83488818449aee75c856312 class="flex justify-between"><a role=button>C/C++</a></label><ul><li><input type=checkbox id=section-d7374e89f91838a29dae7b678f7a5cd4 class=toggle>
@@ -45,8 +54,51 @@
 <label for=section-199cd361b7acb9c4b7e0acac9f128dfc class="flex justify-between"><a role=button>网络工具</a></label><ul><li><input type=checkbox id=section-af5fe744a868ddafeb4bc6e6c61b10f9 class=toggle>
 <label for=section-af5fe744a868ddafeb4bc6e6c61b10f9 class="flex justify-between"><a role=button>Wireshark</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/wireshark/%E5%B8%B8%E7%94%A8%E8%BF%87%E6%BB%A4%E6%9D%A1%E4%BB%B6/>Wireshark 常用过滤条件</a></li><li><a href=/%E5%B7%A5%E5%85%B7/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/wireshark/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>Wireshark 遇见的问题的解决办法</a></li></ul></li></ul></li><li><input type=checkbox id=section-c69fc995f6425f1074d8ae64ce959c17 class=toggle>
 <label for=section-c69fc995f6425f1074d8ae64ce959c17 class="flex justify-between"><a role=button>虚拟机</a></label><ul><li><input type=checkbox id=section-6690855cc45b11e620ce8c67a5fb62fb class=toggle>
-<label for=section-6690855cc45b11e620ce8c67a5fb62fb class="flex justify-between"><a role=button>Vmware</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E8%99%9A%E6%8B%9F%E6%9C%BA/vmware/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>VMware 遇见的问题及解决方法</a></li></ul></li></ul></li></ul></li><li><span>设备</span><ul><li><input type=checkbox id=section-a1abdcaab6c4668c7ce52ea5a3e37013 class=toggle>
-<label for=section-a1abdcaab6c4668c7ce52ea5a3e37013 class="flex justify-between"><a role=button>树莓派</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>故障排除</a></li><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%83%A7%E5%BD%95/>系统的烧录</a></li></ul></li><li><input type=checkbox id=section-efee4cd7fc6d13515117342cc409f41e class=toggle>
+<label for=section-6690855cc45b11e620ce8c67a5fb62fb class="flex justify-between"><a role=button>Vmware</a></label><ul><li><a href=/%E5%B7%A5%E5%85%B7/%E8%99%9A%E6%8B%9F%E6%9C%BA/vmware/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>VMware 遇见的问题及解决方法</a></li></ul></li></ul></li></ul></li><li><span>设备</span><ul><li><input type=checkbox id=section-a1abdcaab6c4668c7ce52ea5a3e37013 class=toggle checked>
+<label for=section-a1abdcaab6c4668c7ce52ea5a3e37013 class="flex justify-between"><a role=button>树莓派</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/>故障排除</a></li><li><a href=/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%83%A7%E5%BD%95/ class=active>系统的烧录</a></li></ul></li><li><input type=checkbox id=section-efee4cd7fc6d13515117342cc409f41e class=toggle>
 <label for=section-efee4cd7fc6d13515117342cc409f41e class="flex justify-between"><a role=button>路由器</a></label><ul><li><a href=/%E8%AE%BE%E5%A4%87/%E8%B7%AF%E7%94%B1%E5%99%A8/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8_mini_%E5%88%B7_openwrt/>小米路由器 Mini 刷 Openwrt</a></li></ul></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>清松的笔记本</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"></aside></header><article class=markdown></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content></div></aside></main></body></html>
+<strong>系统的烧录</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#树莓派系统的烧录>树莓派系统的烧录</a><ul><li><a href=#环境准备>环境准备</a><ul><li><a href=#系统镜像>系统镜像</a></li><li><a href=#使用的工具>使用的工具</a></li></ul></li><li><a href=#烧录>烧录</a><ul><li><a href=#格式化-tf-卡>格式化 TF 卡</a></li><li><a href=#烧录系统>烧录系统</a></li><li><a href=#开机>开机</a></li><li><a href=#扩展系统的硬盘大小>扩展系统的硬盘大小</a></li></ul></li><li><a href=#参考资料>参考资料</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=树莓派系统的烧录>树莓派系统的烧录
+<a class=anchor href=#%e6%a0%91%e8%8e%93%e6%b4%be%e7%b3%bb%e7%bb%9f%e7%9a%84%e7%83%a7%e5%bd%95>#</a></h1><h2 id=环境准备>环境准备
+<a class=anchor href=#%e7%8e%af%e5%a2%83%e5%87%86%e5%a4%87>#</a></h2><h3 id=系统镜像>系统镜像
+<a class=anchor href=#%e7%b3%bb%e7%bb%9f%e9%95%9c%e5%83%8f>#</a></h3><p>树莓派有专用的系统 <strong>raspbian</strong>
+可以在其
+<a href=https://www.raspberrypi.org/downloads/raspbian/>官网下载</a>。不过我要使用的是
+<strong>Centos7</strong>，系统文件可在其官网的
+<a href=https://www.centos.org/download/>下载页面</a>进行下载，<strong>注意一定要下载
+ARM 版本</strong>。</p><h3 id=使用的工具>使用的工具
+<a class=anchor href=#%e4%bd%bf%e7%94%a8%e7%9a%84%e5%b7%a5%e5%85%b7>#</a></h3><h4 id=sd-memory-card-formatter>SD Memory Card formatter
+<a class=anchor href=#sd-memory-card-formatter>#</a></h4><p>这个是用于格式 SD 卡的，它有
+<a href=https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/>Windows
+版</a>和
+<a href=https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-mac-download/>Mac
+版</a>，我使用的是
+Windows 版。</p><h4 id=win32diskimager>win32diskimager
+<a class=anchor href=#win32diskimager>#</a></h4><p>这个是用于向 SD
+卡烧录系统的，在其
+<a href=https://win32diskimager.download/>官网</a>下载最新的稳定版就可以，我是用的是
+<a href=https://win32diskimager.download/Win32DiskImager-1.0.0-src.zip>1.0.0
+版本</a>。</p><h2 id=烧录>烧录
+<a class=anchor href=#%e7%83%a7%e5%bd%95>#</a></h2><h3 id=格式化-tf-卡>格式化 TF 卡
+<a class=anchor href=#%e6%a0%bc%e5%bc%8f%e5%8c%96-tf-%e5%8d%a1>#</a></h3><p>将卡连接到电脑上，打开 SD Memory Card formatter。在上面选择要格式化的 TF
+卡，其他配置不用调，点击 Format<br><img src=https://raw.githubusercontent.com/coderqs/wiki_img/master/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%A0%BC%E5%BC%8F%E5%8C%96_TF_%E5%8D%A1%E6%93%8D%E4%BD%9C%E9%A1%B5%E9%9D%A2.PNG alt="格式化 TF
+卡操作页面"></p><h3 id=烧录系统>烧录系统
+<a class=anchor href=#%e7%83%a7%e5%bd%95%e7%b3%bb%e7%bb%9f>#</a></h3><p>打开 win32diskimager 在上面选择刚下载的 CentOS
+的映像文件，<strong>注意旁边的设备不要选错</strong>，然后点击写入<br><img src=https://raw.githubusercontent.com/coderqs/wiki_img/master/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E7%83%A7%E5%BD%95%E7%B3%BB%E7%BB%9F%E6%97%B6_win32diskimager_%E7%9A%84%E6%93%8D%E4%BD%9C%E9%A1%B5%E9%9D%A2.PNG alt="烧录系统时 win32diskimager
+的操作页面"></p><p>烧录好系统后，在我的电脑可以看到 TF 卡变成一个只有几十 M 的 boot 盘<br><img src=https://raw.githubusercontent.com/coderqs/wiki_img/master/%E8%AE%BE%E5%A4%87/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%9F%A5%E7%9C%8B%E7%83%A7%E5%BD%95%E5%A5%BD%E7%9A%84_TF_%E5%8D%A1.PNG alt="查看烧录好的 TF
+卡"></p><h3 id=开机>开机
+<a class=anchor href=#%e5%bc%80%e6%9c%ba>#</a></h3><p>将烧录完成的 TF 卡插入到树莓派中，同时接上 HDMI
+显示器、键鼠，最后接上电源即可开机。<br>正常情况下，开机是直接进入到桌面环境，网络连接可以选择接入网线或者连接
+wifi。<br>**注：centos 的 arm 版本系统默认用户名：<code>root</code>，默认密码：<code>centos</code>
+**</p><h3 id=扩展系统的硬盘大小>扩展系统的硬盘大小
+<a class=anchor href=#%e6%89%a9%e5%b1%95%e7%b3%bb%e7%bb%9f%e7%9a%84%e7%a1%ac%e7%9b%98%e5%a4%a7%e5%b0%8f>#</a></h3><p>开机后发现系统硬盘大小并不是和 TF 一致，这是因为系统是通过 <strong>烧录</strong>
+而不是 <strong>安装</strong> 进 TF 卡的。在烧录的过程中不会根据 TF
+卡的大小建分区表、文件系统，而是把之前预先写好的分区表和文件系统按原样写上去，装完启动后在自己扩大分区和文件系统同。这样的好处是烧录过程非常简单，在任何操作系统下都能正确完成。</p><h4 id=扩展方法>扩展方法
+<a class=anchor href=#%e6%89%a9%e5%b1%95%e6%96%b9%e6%b3%95>#</a></h4><p>使用软件
+<a href=https://www.diskgenius.cn/download.php>DiskGenius</a> 修改挂载点
+<code>/</code>
+的磁盘大小即可。修改方法可以参考
+<a href=http://bbs.shumeipaiba.com/thread-26-1-1.html>这篇教程</a></p><h2 id=参考资料>参考资料
+<a class=anchor href=#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99>#</a></h2><p><a href=https://blog.csdn.net/weixin_41656968/article/details/79592624>树莓派(Raspberry Pi
+3)的系统烧录及使用</a><br><a href=https://blog.csdn.net/qq_35379989/article/details/79050932>树莓派安装系统详细步骤</a><br><a href="https://blog.csdn.net/qq_29225913/article/details/100939347?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param">树莓派（一）——完整烧录及配置过程（超详细）</a><br><a href=https://jianger.space/pi-system-installation-and-initialization-configuration/>【树莓派】系统安装与初始化配置</a>]</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/coderqs/notes/tree/master/content.zh/%e8%ae%be%e5%a4%87/%e6%a0%91%e8%8e%93%e6%b4%be/%e7%b3%bb%e7%bb%9f%e7%9a%84%e7%83%a7%e5%bd%95.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>编辑本页</span></a></div></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#树莓派系统的烧录>树莓派系统的烧录</a><ul><li><a href=#环境准备>环境准备</a><ul><li><a href=#系统镜像>系统镜像</a></li><li><a href=#使用的工具>使用的工具</a></li></ul></li><li><a href=#烧录>烧录</a><ul><li><a href=#格式化-tf-卡>格式化 TF 卡</a></li><li><a href=#烧录系统>烧录系统</a></li><li><a href=#开机>开机</a></li><li><a href=#扩展系统的硬盘大小>扩展系统的硬盘大小</a></li></ul></li><li><a href=#参考资料>参考资料</a></li></ul></li></ul></nav></div></aside></main></body></html>
